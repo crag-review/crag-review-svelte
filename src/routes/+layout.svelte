@@ -8,6 +8,7 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { siteTitle, siteURL } from '$lib/config.js';
+	import { basePath } from '$app/paths';
 	export let data;
 
 	const transitionIn = { delay: 150, duration: 150 };
@@ -33,18 +34,18 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="/css/vars.css" />
-	<link rel="stylesheet" href="/css/root.css" />
-	<link rel="stylesheet" href="/css/fonts.css" />
-	<link rel="stylesheet" href="/css/typography.css" />
-	<link rel="stylesheet" href="/css/layout.css" />
-	<link rel="stylesheet" href="/css/components.css" />
-	<link rel="stylesheet" href="/css/header-and-footer.css" />
-	<link rel="stylesheet" href="/css/forms.css" />
-	<link rel="stylesheet" href="/css/animation.css" />
-	<link rel="stylesheet" href="/css/utilities.css" />
-	<link rel="stylesheet" href="/css/code.css" />
-	<link rel="stylesheet" href="/css/prism.css" />
+	<link rel="stylesheet" href="{basePath}/css/vars.css" />
+	<link rel="stylesheet" href="{basePath}/css/root.css" />
+	<link rel="stylesheet" href="{basePath}/css/fonts.css" />
+	<link rel="stylesheet" href="{basePath}/css/typography.css" />
+	<link rel="stylesheet" href="{basePath}/css/layout.css" />
+	<link rel="stylesheet" href="{basePath}/css/components.css" />
+	<link rel="stylesheet" href="{basePath}/css/header-and-footer.css" />
+	<link rel="stylesheet" href="{basePath}/css/forms.css" />
+	<link rel="stylesheet" href="{basePath}/css/animation.css" />
+	<link rel="stylesheet" href="{basePath}/css/utilities.css" />
+	<link rel="stylesheet" href="{basePath}/css/code.css" />
+	<link rel="stylesheet" href="{basePath}/css/prism.css" />
 	<link
 		rel="alternate"
 		type="application/rss+xml"
