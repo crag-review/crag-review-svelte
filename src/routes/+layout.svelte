@@ -28,7 +28,7 @@
 	 * own preloadData() calls here, too.
 	 **/
 	onMount(() => {
-		const navRoutes = navItems.map((item) => item.route);
+		const navRoutes = navItems.map((item) => base+item.route);
 		preloadCode(...navRoutes);
 	});
 </script>

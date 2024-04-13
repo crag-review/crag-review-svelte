@@ -1,5 +1,7 @@
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
+	import { base } from '$app/paths';
+
 	export let data;
 
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
@@ -26,7 +28,7 @@
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<img
 		class="cover-image"
-		src={coverImage}
+		src={base}{coverImage}
 		alt=""
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
@@ -51,7 +53,7 @@
 			<ul class="post-footer__categories">
 				{#each categories as category}
 					<li>
-						<a href="/blog/category/{category}/">
+						<a href="{base}/blog/category/{category}/">
 							{category}
 						</a>
 					</li>

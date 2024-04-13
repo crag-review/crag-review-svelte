@@ -11,7 +11,7 @@
 			<article>
 				<a href="{base}/blog/{post.slug}">
 					<img
-					src={post.coverImage}
+					src={base}{post.coverImage}
 					alt=""
 					width={post.coverWidth}
 					height={post.coverHeight}

@@ -6,7 +6,7 @@
 
 <ul>
 	{#each navItems as page}
-		<NavItem href={base}/{page.route}>
+		<NavItem href={base}{page.route}>
 			{page.title}
 		</NavItem>
 	{/each}
