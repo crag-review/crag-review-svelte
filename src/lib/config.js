@@ -7,8 +7,8 @@
 
 export const siteTitle = 'Crag Review'
 export const siteDescription = 'List of climbing crags accessable by public transport'
-export const siteURL = 'crag-review.github.io'
-export const siteLink = 'https://crag-review.github.io'
+export const siteURL = 'crag-review.github.io/crag-review'
+export const siteLink = 'https://crag-review.github.io/crag-review'
 export const siteAuthor = 'Benjamin Wieser'
 
 // Controls how many posts are shown per page on the main blog index pages
