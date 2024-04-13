@@ -46,6 +46,7 @@
 	<link rel="stylesheet" href="{base}/css/utilities.css" />
 	<link rel="stylesheet" href="{base}/css/code.css" />
 	<link rel="stylesheet" href="{base}/css/prism.css" />
+	<link rel="icon" href="{base}/favicon.png" />
 	<link
 		rel="alternate"
 		type="application/rss+xml"
