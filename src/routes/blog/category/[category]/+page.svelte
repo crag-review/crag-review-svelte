@@ -3,6 +3,7 @@
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
   import { postsPerPage } from '$lib/config'
+	import { base } from '$app/paths';
 
 	export let data
 
@@ -22,9 +23,9 @@
 
 {#if posts.length}
 	<PostsList posts={posts} />
-	<Pagination currentPage={page} totalPosts={total} path="/blog/category/{category}/page" />
+	<Pagination currentPage={page} totalPosts={total} path="{base}/blog/category/{category}/page" />
 {:else}
 	<p><strong>Ope!</strong> Sorry, couldn't find any posts in the category "{category}".</p>
 
-	<p><a href="/blog">Back to blog</a></p>
+	<p><a href="{base}/blog">Back to blog</a></p>
 {/if}
