@@ -8,7 +8,7 @@ categories:
 coverImage: "/images/mödling.jpg"
 coverWidth: 16
 coverHeight: 9
-excerpt: Eine List mit Klettergärten rund um Mödling
+excerpt: Klettergärten in Mödling und Umgebung
 ---
 
 ## Roter Ofen

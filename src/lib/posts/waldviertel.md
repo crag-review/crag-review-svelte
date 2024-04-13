@@ -8,7 +8,7 @@ categories:
 coverImage: "/images/wachau.jpg"
 coverWidth: 16
 coverHeight: 9
-excerpt: Hier ist eine List mit Klettergärten im Waldviertel
+excerpt: Klettergärten im Waldviertel
 ---
 
 ## Rosenburg

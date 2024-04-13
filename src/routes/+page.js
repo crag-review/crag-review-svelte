@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit'
 
 export const load = async () => {
 	try {
-		const ReadMeFile = await import('../../README.md')
+		const ReadMeFile = await import('../lib/index.md')
 		const ReadMe = ReadMeFile.default
 		
 		return {

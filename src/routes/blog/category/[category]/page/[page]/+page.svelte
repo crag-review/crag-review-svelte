@@ -14,7 +14,7 @@
 
 
 <svelte:head>
-	<title>Blog category {category} - page {page}</title>
+	<title>{category}  {page}</title>
 	<meta data-key="description" name={siteDescription}>
 </svelte:head>
 

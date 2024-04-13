@@ -8,12 +8,16 @@
 
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Klettergebiete</title>
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
-<h1>Blog</h1>
+<h1>Klettergebiete</h1>
 
 <PostsList posts={data.posts} />
 
 <Pagination currentPage={1} totalPosts={data.total} />
+
+<style>
+	h1 { text-align: center;}
+</style>

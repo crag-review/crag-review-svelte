@@ -11,4 +11,4 @@ Hinterleiten 10 <br>
 Ein Projekt von [wieser-engineering](https://www.wieser-engineering.xyz)
 
 ### Kontakt
-https://www.wieser-engineering.xyz/contact
+https://www.wieser-engineering.xyz/contactus

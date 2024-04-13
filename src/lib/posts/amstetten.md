@@ -8,7 +8,7 @@ categories:
 coverImage: "/images/amstetten.jpg"
 coverWidth: 16
 coverHeight: 9
-excerpt: Eine List mit Klettergärten rund um Amstetten
+excerpt: Tiefenbach und Sarmingstein, eine List mit Klettergärten rund um Amstetten
 ---
 
 ## Tiefenbach

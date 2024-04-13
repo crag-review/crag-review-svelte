@@ -27,3 +27,11 @@
 		</li>
 	{/each}
 </ul>
+
+<style>
+	ul {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		column-gap: 50px;
+	}
+</style>
