@@ -1,5 +1,7 @@
+import { base } from '$app/paths';
+
 export const load = async ({ url, fetch }) => {
-	const res = await fetch(`${url.origin}/api/posts.json`)
+	const res = await fetch(`${url.origin}${base}/api/posts.json`)
 	let posts = await res.json()
 
 	let uniqueCategories = {}

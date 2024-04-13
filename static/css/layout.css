@@ -87,7 +87,7 @@ li {
 }
 
 .icon-link::before {
-	content: url('/link.svg');
+	content: url('/crag-review/link.svg');
 	fill: currentColor;
 	position: absolute;
 	left: -1rem;
