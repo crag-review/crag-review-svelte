@@ -1,0 +1,42 @@
+---
+title: "Sportklettern in der Wachau"
+date: "2024-04-09"
+updated: "2024-04-09"
+categories:
+  - "sportklettern"
+  - "klettern"
+coverImage: "/images/wachau.jpg"
+coverWidth: 16
+coverHeight: 9
+excerpt: Eine List mit Klettergärten in der Wachau
+---
+
+## Dürnstein
+
+Mit dem Zug nach Krems und dann mit dem Bus zum Dürnstein sind diese Klettergebiet in etwa 1,5 Stunden von Wien erreichbar.<br>
+### Nasenwand
+
+**Haltestelle:** Dürnstein/Wachau Nord
+
+Ein Topo ist hier zu finden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettergarten/nasenwand-duernstein-wachau/)
+
+### Kummerstal
+
+**Haltestelle:** Dürnstein/Wachau Nord
+
+Das Kummerstal hat etwas mehr Zustieg und ist etwas schwehrer zu finden. Jedoch sehr Lohnenswert. 
+
+Ein Topo für das Kummerstal ist hier zu finden: [the crag](https://www.thecrag.com/de/klettern/wachau/area/345363291)
+
+### Ruine Dürnstein
+
+**Haltestelle:** Dürnstein/Wachau Parkplatz P2
+
+Rund um die Burgruine Dürnstein sind mehrere Türme mit Kletterrouten. 
+
+Thie Routen können auf [the crag](https://www.thecrag.com/climbing/wachau/durnstein/routes) gefunden werden. 
+
+### Civetta
+
+**Haltestelle:** Dürnstein/Wachau Nord
+Ein Topo ist hier zu finden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettergarten/civetta-duernstein-wachau/)
