@@ -5,8 +5,8 @@
  * PLEASE BE SURE TO UPDATE THEM ALL! Thank you!
  **/
 
-export const siteTitle = 'Crag Review'
-export const siteDescription = 'List of climbing crags accessable by public transport'
+export const siteTitle = 'Klettergebiete rund um Wien'
+export const siteDescription = 'Finde Klettergebiete die von Wien aus öffentlich erreichbar sind'
 export const siteURL = 'crag-review.github.io/crag-review'
 export const siteLink = 'https://crag-review.github.io/crag-review'
 export const siteAuthor = 'Benjamin Wieser'
