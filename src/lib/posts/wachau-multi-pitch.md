@@ -1,5 +1,5 @@
 ---
-title: "Merhseillängen in der Wachau"
+title: "Mehrseillängen in der Wachau"
 date: "2024-04-09"
 updated: "2024-04-09"
 categories:
@@ -13,14 +13,17 @@ excerpt: Mehrseillängen in Wachau und Umgebung
 
 ## Dürnstein
 
-Mit dem Zug nach Krems und dann mit dem Bus zum Dürnstein sind diese Klettergebiet in etwa 1,5 Stunden von Wien erreichbar.<br>
-### Don Bosco Grad
+Mit dem Zug nach Krems und dann mit dem Bus nach Dürnstein sind diese Klettergebiete in etwa 1,5 Stunden von Wien erreichbar.<br>
+### Don Bosco Grat
 
 **Haltestelle:** Dürnstein/Wachau Nord
 
 Ein Topo ist hier zu finden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettern/don-bosco-grat-wachau/)
 
-### Wachauer Grad
+### Wachauer Grat
+
+**Haltestelle:** Dürnstein/Wachau Nord
+
 
 Ein Topo ist hier zu finden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettern/wachauergrat-wachauer-grat/)
 
