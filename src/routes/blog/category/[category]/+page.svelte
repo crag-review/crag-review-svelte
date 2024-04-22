@@ -29,3 +29,8 @@
 
 	<p><a href="{base}/blog">Back to blog</a></p>
 {/if}
+<style>
+	h1 {
+		text-align: center;
+	}
+</style>

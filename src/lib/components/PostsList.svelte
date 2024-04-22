@@ -30,8 +30,12 @@
 
 <style>
 	ul {
-		display: grid;
-		grid-template-columns: auto auto auto;
-		column-gap: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 50px;
+		justify-content: center;
+		}
+	li {
+		max-width: 300px;
 	}
 </style>
