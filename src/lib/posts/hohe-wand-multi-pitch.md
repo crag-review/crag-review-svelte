@@ -4,7 +4,7 @@ date: "2024-04-27"
 updated: "2024-04-27"
 categories:
   - "Mehrseillängen"
-  - "klettern"
+  - "Klettern"
 coverImage: "/images/hohe-wand-multi-pitch.jpg"
 coverWidth: 20
 coverHeight: 15

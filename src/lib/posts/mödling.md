@@ -4,7 +4,7 @@ date: "2024-04-09"
 updated: "2024-04-09"
 categories:
   - "sportklettern"
-  - "klettern"
+  - "Klettern"
 coverImage: "/images/mödling.jpg"
 coverWidth: 16
 coverHeight: 9
