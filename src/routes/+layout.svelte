@@ -7,7 +7,7 @@
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import { siteTitle, siteURL } from '$lib/config.js';
+	import { siteTitle, siteLink } from '$lib/config.js';
 	import { base } from '$app/paths';
 	export let data;
 
@@ -51,7 +51,7 @@
 		rel="alternate"
 		type="application/rss+xml"
 		title={siteTitle}
-		href="http://{siteURL}/api/rss.xml"
+		href="{siteLink}api/rss.xml"
 	/>
 </svelte:head>
 

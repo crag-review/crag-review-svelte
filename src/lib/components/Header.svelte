@@ -1,9 +1,6 @@
 <script>
 	import MainNav from './MainNav.svelte'
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte'
-	import { siteTitle } from '$lib/config'
-	import { base } from '$app/paths';
-
 
 	const focusMain = () => {
 		const main = document.querySelector('main');
