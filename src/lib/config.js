@@ -7,8 +7,7 @@
 
 export const siteTitle = 'Klettergebiete rund um Wien'
 export const siteDescription = 'Finde Klettergebiete die von Wien aus öffentlich erreichbar sind'
-export const siteURL = 'crag-review.github.io/crag-review'
-export const siteLink = 'https://crag-review.github.io/crag-review'
+export const siteLink = 'https://crag-review.wieser-engineering.xyz/'
 export const siteAuthor = 'Benjamin Wieser'
 
 // Controls how many posts are shown per page on the main blog index pages

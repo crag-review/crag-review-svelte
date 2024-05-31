@@ -1,6 +1,5 @@
 <script>
 	import { siteAuthor } from '$lib/config';
-	import NavItems from './NavItems.svelte';
 	import { base } from '$app/paths';
 </script>
 
