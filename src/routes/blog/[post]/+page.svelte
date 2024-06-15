@@ -45,8 +45,9 @@
 		{updated}
 	</div>
 
-	<svelte:component this={PostContent} />
-
+	<div class="prose lg:proxe-xl">
+		<svelte:component this={PostContent} />
+	</div>
 	{#if categories}
 		<aside class="post-footer">
 			<h2>Posted in:</h2>

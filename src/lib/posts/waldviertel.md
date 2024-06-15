@@ -9,6 +9,8 @@ coverImage: "/images/wachau.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: Klettergärten im Waldviertel
+location: [48.6283, 15.6346]
+
 ---
 
 ## Rosenburg

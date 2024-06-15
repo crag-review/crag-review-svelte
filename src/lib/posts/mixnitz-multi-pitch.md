@@ -9,6 +9,8 @@ coverImage: "/images/mixnitz-multi-pitch.jpg"
 coverWidth: 20
 coverHeight: 15
 excerpt: Mehrseillängen rund um Mixnitz
+location: [47.3293, 15.3637]
+
 ---
 
 ## Roter Kamin

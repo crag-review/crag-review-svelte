@@ -9,6 +9,8 @@ coverImage: "/images/schneeberg.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: Klettern im Rax-Schneeberg-Gebiet
+location: [47.7889, 15.8451]
+
 ---
 
 ## Wasserfall Klettergarten Losenheim

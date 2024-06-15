@@ -2,7 +2,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: [
-		'./src/**/*.{html,js,svelte,ts}',
+		'./src/**/*.{html,js,svelte,ts,md}',
 		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
 	],
 
@@ -26,5 +26,5 @@ export default {
 		}
 	},
 
-	plugins: [require('flowbite/plugin')]
+	plugins: [require('flowbite/plugin'), require('@tailwindcss/typography')]
 };

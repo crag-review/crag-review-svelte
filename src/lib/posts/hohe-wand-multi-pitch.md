@@ -9,6 +9,7 @@ coverImage: "/images/hohe-wand-multi-pitch.jpg"
 coverWidth: 20
 coverHeight: 15
 excerpt: Mehrseillängen auf der Hohen Wand in den Gutensteiner Alpen
+location: [47.8296609, 16.0857361]
 ---
 
 ## Beserlpark

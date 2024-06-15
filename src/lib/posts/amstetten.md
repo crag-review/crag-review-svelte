@@ -9,7 +9,7 @@ coverImage: "/images/amstetten.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: Tiefenbach und Sarmingstein, eine Liste mit Klettergärten rund um Amstetten
-location: [48.2081, 16.3713]
+location: [48.1229,14.87206]
 ---
 
 ## Tiefenbach

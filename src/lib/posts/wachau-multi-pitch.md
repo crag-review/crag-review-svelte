@@ -9,6 +9,8 @@ coverImage: "/images/wachau-mulit-pitch.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: Mehrseillängen in Wachau und Umgebung
+location: [48.3976, 15.5197]
+
 ---
 
 ## Dürnstein

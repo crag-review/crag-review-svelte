@@ -8,9 +8,11 @@
 	let map;
 
 	onMount(async () => {
+		console.log(locations)
+
 		const leaflet = await import('leaflet');
 
-		map = leaflet.map(mapElement).setView([48.2081, 16.3713], 9);
+		map = leaflet.map(mapElement).setView([48, 16.0], 8);
 
 		leaflet
 			.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -21,11 +23,11 @@
 
 		var climberIcon = L.icon({
 			iconUrl: 'icons/climber.svg',
-			iconSize: [30, 30], // size of the icon
+			iconSize: [40, 40], // size of the icon
 		});
 
 		locations.forEach((location) => {
-			leaflet.marker(location, { icon: climberIcon }).addTo(map).bindPopup('<a href="asdf">climbing area</a>');
+			leaflet.marker(location.location, { icon: climberIcon }).addTo(map).bindPopup(`<a href="./blog/${location.slug}">${location.title}</a>`);
 		});
 	});
 
@@ -44,6 +46,6 @@
 <style>
 	@import 'leaflet/dist/leaflet.css';
 	main div {
-		height: 800px;
+		height: 600px;
 	}
 </style>

@@ -9,6 +9,8 @@ coverImage: "/images/wachau.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: Klettergärten in Wachau und Umgebung
+location: [48.4112, 15.6071]
+
 ---
 
 ## Dürnstein
@@ -40,4 +42,11 @@ Die Routen können auf [the crag](https://www.thecrag.com/climbing/wachau/durnst
 
 **Haltestelle:** Dürnstein/Wachau Nord
 
+
 Ein Topo ist hier zu finden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettergarten/civetta-duernstein-wachau/)
+
+### St. Lorenz
+
+**Haltestelle:** St.Lorenz/Wachau Bundesstraße
+
+Ein Topo ist hier zu finden: [the crag](https://www.thecrag.com/de/klettern/wachau/area/345374742)
