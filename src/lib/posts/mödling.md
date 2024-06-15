@@ -10,6 +10,9 @@ coverWidth: 16
 coverHeight: 9
 excerpt: Klettergärten in Mödling und Umgebung
 location: [48.0825, 16.2869]
+map:
+  - location: [48.0825, 16.2869]
+    slug: mödling
 ---
 
 ## Roter Ofen
@@ -27,3 +30,19 @@ Der Efeugrat ist zu Fuß vom Bahnhof Mödling erreichbar. Dabei dauert die Anrei
 **Haltestelle:** Mödling Bahnhof
 
 Ein Topo kann auf hier gefunden werden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettergarten/efeugrat-moedling/)
+
+## Lausbubenwand
+
+Die Lausbubenwand ist nur 5 Minuten vom Efeugrat entfernt. Jedoch ist der Fels wesentlich weniger abgegriffen. 
+
+**Haltestelle:** Mödling Bahnhof
+
+Ein Topo kann auf hier gefunden werden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettergarten/lausbubenwand-moedling/)
+
+## Glocknergrat
+
+Die Glocknergrat zu Fuß von Mödling erreichbar. 
+
+**Haltestelle:** Mödling Bahnhof
+
+Ein Topo kann auf hier gefunden werden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettergarten/glocknergrat-moedling/)

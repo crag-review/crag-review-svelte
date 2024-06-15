@@ -25,18 +25,12 @@
 	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
 </svelte:head>
 
-<article class="post">
-	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<img
-		class="cover-image"
-		src={base}/images/main/{coverImage}
-		alt=""
-		style="aspect-ratio: {coverWidth} / {coverHeight};"
-		width={coverWidth}
-		height={coverHeight}
-	/>
+<article >
+	<div class="mx-auto h-[60vh] bg-cover bg-fixed bg-center bg-no-repeat shadow-lg"
+	style="background-image:url('{base}/images/main/{coverImage}');">
 
-	<h1>{title}</h1>
+	</div>
+	<h1 class="text-4xl mt-5">{title}</h1>
 
 	<div class="meta">
 		<b>Published:</b>
