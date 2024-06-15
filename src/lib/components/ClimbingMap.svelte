@@ -7,16 +7,13 @@
 
 	export let zoom = 8;
 	export let center = [48, 16.0];
-
-
+	
 	import { onMount, onDestroy } from 'svelte';
 
 	let mapElement;
 	let map;
 
 	onMount(async () => {
-		console.log(locations)
-
 		const leaflet = await import('leaflet');
 
 		map = leaflet.map(mapElement).setView(center, zoom);

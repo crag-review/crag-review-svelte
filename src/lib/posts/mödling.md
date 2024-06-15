@@ -9,7 +9,7 @@ coverImage: 'mödling.jpg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Klettergärten in Mödling und Umgebung
-location: [48.0825, 16.2869]
+location: [48.08088,16.27030]
 zoom: 14
 map:
   - title: Roter Ofen

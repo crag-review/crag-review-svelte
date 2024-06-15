@@ -13,7 +13,6 @@
 	const locations = data.meta.map
 	const zoom = data.meta.zoom
 	const center = data.meta.location
-
 </script>
 
 <svelte:head>
@@ -38,12 +37,14 @@
 	</div>
 	<h1 class="text-4xl mt-5">{title}</h1>
 
-	<Accordion >
-		<AccordionItem open>
-			<ClimbingMap {locations} {zoom} {center}></ClimbingMap>
-		</AccordionItem>
-	</Accordion>
+	{#if !!locations}
 
+		<Accordion >
+			<AccordionItem open>
+				<ClimbingMap {locations} {zoom} {center}></ClimbingMap>
+			</AccordionItem>
+		</Accordion>
+	{/if}
 
 	<div class="prose lg:proxe-xl">
 		<svelte:component this={PostContent} />
