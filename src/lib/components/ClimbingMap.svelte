@@ -1,4 +1,6 @@
 <script>
+	import { base } from '$app/paths';
+
 	export const prerender = false;
 	export let locations = [];
 
@@ -27,7 +29,7 @@
 		});
 
 		locations.forEach((location) => {
-			leaflet.marker(location.location, { icon: climberIcon }).addTo(map).bindPopup(`<a href="./blog/${location.slug}">${location.title}</a>`);
+			leaflet.marker(location.location, { icon: climberIcon }).addTo(map).bindPopup(`<a href="${base}/blog/${location.slug}">${location.title}</a>`);
 		});
 	});
 

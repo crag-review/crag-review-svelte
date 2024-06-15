@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import ClimbingMap from '$lib/components/ClimbingMap.svelte';
 	import { siteTitle } from '$lib/config';
 	import {Accordion, AccordionItem} from 'flowbite-svelte';
@@ -17,9 +18,9 @@ In diesem Blog sammle ich Klettergebiete rund um Wien, die gut mit öffentlichen
 
 Sehr empfehlenswert ist auch der Mobilitätsguide des Alpenvereins: <a href="https://www.alpenverein.at/portal/natur-umwelt/sanfte_mobilitaet/Mobilitaetsguide-Sportklettern.php">Alpenverein</a><br>
 
-Klettergärten: <a href="/blog/category/sportklettern">Link</a><br>
+Klettergärten: <a href="{base}/blog/category/sportklettern">Link</a><br>
 
-Mehrseillängen: <a href="/blog/category/Mehrseillängen">Link</a>
+Mehrseillängen: <a href="{base}/blog/category/Mehrseillängen">Link</a>
 
 <Accordion>
 	<AccordionItem open>
