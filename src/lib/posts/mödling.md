@@ -1,27 +1,28 @@
 ---
-title: "Sportklettern in Mödling und Umgebung"
-date: "2024-04-09"
-updated: "2024-04-09"
+title: 'Sportklettern in Mödling und Umgebung'
+date: '2024-04-09'
+updated: '2024-04-09'
 categories:
-  - "sportklettern"
-  - "Klettern"
-coverImage: "/images/mödling.jpg"
+  - 'sportklettern'
+  - 'Klettern'
+coverImage: '/images/mödling.jpg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Klettergärten in Mödling und Umgebung
 location: [48.0825, 16.2869]
-
 ---
 
 ## Roter Ofen
-Mit dem Zug nach Mödling und dann mit dem Bus nach Hinterbrühl dauert die Anreise von Wien ca. eine Stunde. 
+
+Mit dem Zug nach Mödling und dann mit dem Bus nach Hinterbrühl dauert die Anreise von Wien ca. eine Stunde.
 
 **Haltestelle:** Hinterbrühl Brühlegg
 
 Ein Topo kann auf hier gefunden werden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettergarten/roter-ofen-moedling-hinterbruehl/)
 
 ## Efeugrat
-Der Efeugrat ist zu Fuß vom Bahnhof Mödling erreichbar. Dabei dauert die Anreise von Wien ca. eine Stunde. Alternativ kann man sich am Bahnhof Mödling ein Nextbike ausborgen, um die Anreise um 15 Minuten zu verkürzen. 
+
+Der Efeugrat ist zu Fuß vom Bahnhof Mödling erreichbar. Dabei dauert die Anreise von Wien ca. eine Stunde. Alternativ kann man sich am Bahnhof Mödling ein Nextbike ausborgen, um die Anreise um 15 Minuten zu verkürzen.
 
 **Haltestelle:** Mödling Bahnhof
 

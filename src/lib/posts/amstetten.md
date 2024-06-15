@@ -1,15 +1,15 @@
 ---
-title: "Sportklettern im Amstettner Raum"
-date: "2024-04-09"
-updated: "2024-04-09"
+title: 'Sportklettern im Amstettner Raum'
+date: '2024-04-09'
+updated: '2024-04-09'
 categories:
-  - "sportklettern"
-  - "Klettern"
-coverImage: "/images/amstetten.jpg"
+  - 'sportklettern'
+  - 'Klettern'
+coverImage: '/images/amstetten.jpg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Tiefenbach und Sarmingstein, eine Liste mit Klettergärten rund um Amstetten
-location: [48.1229,14.87206]
+location: [48.1229, 14.87206]
 ---
 
 ## Tiefenbach
@@ -22,9 +22,8 @@ Ein etwas veraltetes topo ist hier zu finden: [guglhupfclimbing](https://guglhup
 
 Auf "the Crag" gibt es eine aktuelle Übersicht über alle Routen [the Crag](https://www.thecrag.com/de/klettern/austria/wien-vienna-area/area/346959531)
 
-
-
 ## Sarmingstein
+
 Mit dem Zug nach Amstetten und dann mit dem Bus zum Sarmingstein ist dieses Klettergebiet in etwa 2 Stunden von Wien erreichbar. Alternativ kann in Amstetten ein Rail & Drive ausgeborgt werden.<br>
 
 **Haltestelle:** Sarmingstein Ort

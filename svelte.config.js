@@ -1,7 +1,7 @@
-import adapter from '@sveltejs/adapter-static'
-import { mdsvex } from 'mdsvex'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import rehypeSlug from 'rehype-slug'
+import adapter from '@sveltejs/adapter-static';
+import { mdsvex } from 'mdsvex';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeSlug from 'rehype-slug';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -15,11 +15,8 @@ const config = {
 			extensions: ['.md'],
 
 			// Adds IDs to headings, and anchor links to those IDs. Note: must stay in this order to work.
-			rehypePlugins: [
-				rehypeSlug,
-				rehypeAutolinkHeadings,
-			],
-		}),
+			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
+		})
 	],
 
 	kit: {
@@ -38,7 +35,7 @@ const config = {
 				'/blog/category/page/',
 				'/blog/category/page/*',
 				'/blog/page/',
-				'/blog/page/*',
+				'/blog/page/*'
 			]
 		}
 	}

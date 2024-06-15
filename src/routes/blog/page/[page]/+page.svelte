@@ -4,8 +4,6 @@
 	import Pagination from '$lib/components/Pagination.svelte';
 	import { postsPerPage, siteDescription } from '$lib/config';
 	import { base } from '$app/paths';
-	import ClimbingMap from '$lib/components/ClimbingMap.svelte';
-	import {Accordion, AccordionItem} from 'flowbite-svelte';
 
 	export let data;
 	const { page, totalPosts, posts } = data;
