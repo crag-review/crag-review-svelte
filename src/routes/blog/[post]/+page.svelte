@@ -2,12 +2,18 @@
 <script>
 	import { base } from '$app/paths';
 	import { Button } from 'flowbite-svelte';
+	import {Accordion, AccordionItem} from 'flowbite-svelte';
+	import ClimbingMap from '$lib/components/ClimbingMap.svelte';
 
 	export let data;
 
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
 		data.meta;
 	const { PostContent } = data;
+	const locations = data.meta.map
+	const zoom = data.meta.zoom
+	const center = data.meta.location
+
 </script>
 
 <svelte:head>
@@ -32,13 +38,12 @@
 	</div>
 	<h1 class="text-4xl mt-5">{title}</h1>
 
-	<div class="meta">
-		<b>Published:</b>
-		{date}
-		<br />
-		<b>Updated:</b>
-		{updated}
-	</div>
+	<Accordion >
+		<AccordionItem open>
+			<ClimbingMap {locations} {zoom} {center}></ClimbingMap>
+		</AccordionItem>
+	</Accordion>
+
 
 	<div class="prose lg:proxe-xl">
 		<svelte:component this={PostContent} />

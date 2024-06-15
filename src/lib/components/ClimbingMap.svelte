@@ -2,7 +2,12 @@
 	import { base } from '$app/paths';
 
 	export const prerender = false;
+
 	export let locations = [];
+
+	export let zoom = 8;
+	export let center = [48, 16.0];
+
 
 	import { onMount, onDestroy } from 'svelte';
 
@@ -14,7 +19,7 @@
 
 		const leaflet = await import('leaflet');
 
-		map = leaflet.map(mapElement).setView([48, 16.0], 8);
+		map = leaflet.map(mapElement).setView(center, zoom);
 
 		leaflet
 			.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -24,7 +29,7 @@
 			.addTo(map);
 
 		var climberIcon = L.icon({
-			iconUrl: 'icons/climber.svg',
+			iconUrl: base + '/icons/climber.svg',
 			iconSize: [40, 40], // size of the icon
 		});
 

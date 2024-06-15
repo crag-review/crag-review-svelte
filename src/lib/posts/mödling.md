@@ -10,9 +10,20 @@ coverWidth: 16
 coverHeight: 9
 excerpt: Klettergärten in Mödling und Umgebung
 location: [48.0825, 16.2869]
+zoom: 14
 map:
-  - location: [48.0825, 16.2869]
-    slug: mödling
+  - title: Roter Ofen
+    slug: mödling#roter-ofen
+    location: [48.08986,16.23916]
+  - title: Efeugrat
+    slug: mödling#efeugrat
+    location: [48.08088,16.27030]
+  - title: Lausbubenwand
+    slug: mödling#lausbubenwand
+    location: [48.08049,16.27297]
+  - title: Glocknergrat
+    slug: mödling#glocknergrat
+    location: [48.08245, 16.27625]
 ---
 
 ## Roter Ofen
