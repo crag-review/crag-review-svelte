@@ -44,7 +44,6 @@
 <svelte:head>
 	<link rel="stylesheet" href="{base}/css/vars.css" />
 	<link rel="stylesheet" href="{base}/css/root.css" />
-	<link rel="stylesheet" href="{base}/css/fonts.css" />
 	<link rel="stylesheet" href="{base}/css/typography.css" />
 	<link rel="stylesheet" href="{base}/css/layout.css" />
 	<link rel="stylesheet" href="{base}/css/components.css" />

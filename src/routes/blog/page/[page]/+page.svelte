@@ -10,10 +10,9 @@
 	export let data;
 	const { page, totalPosts, posts } = data;
 
-	const locations = [[50, 50]];
+	$: lowerBound = (page * postsPerPage) - (postsPerPage - 1) || 1
+	$: upperBound = Math.min(page * postsPerPage, totalPosts)
 
-	$: lowerBound = page * postsPerPage - (postsPerPage - 1) || 1;
-	$: upperBound = Math.min(page * postsPerPage, totalPosts);
 </script>
 
 <svelte:head>
