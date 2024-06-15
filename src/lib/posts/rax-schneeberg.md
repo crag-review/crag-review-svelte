@@ -5,7 +5,7 @@ updated: '2024-04-09'
 categories:
   - 'sportklettern'
   - 'Klettern'
-coverImage: 'schneeberg.jpg'
+coverImage: 'losenheim.jpg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Klettern im Rax-Schneeberg-Gebiet
@@ -14,7 +14,7 @@ location: [47.7889, 15.8451]
 
 ## Wasserfall Klettergarten Losenheim
 
-Mit dem Zug nach Puchberg am Schneeberg und dann mit dem Bus weiter, ist dieses Klettergebiet von Wien aus in 2 Stunden erreichbar.
+Mit dem Zug nach Puchberg am Schneeberg und dann mit dem Bus weiter, ist dieses Klettergebiet von Wien aus in 2 Stunden erreichbar. Durch den Wasserfall und die einfachen Routen ist dieses Gebiet besonders für Familien geeignet.
 
 **Haltestelle:** Puchberg am Schneeberg/Sonnleiten
 

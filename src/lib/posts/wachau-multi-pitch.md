@@ -34,7 +34,7 @@ Ein Topo ist hier zu finden: [bergsteigen.com](https://www.bergsteigen.com/toure
 
 Ein Topo ist hier zu finden: [bergsteigen.com](https://www.bergsteigen.com/touren/klettern/bergrettungsweg-duernstein-wachau/)
 
-### Ruine Dürnstein
+### Smaragdlerweg
 
 **Haltestelle:** Dürnstein/Wachau Parkplatz P2
 

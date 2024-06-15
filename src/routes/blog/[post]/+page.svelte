@@ -7,7 +7,7 @@
 
 	export let data;
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
+	const { title, excerpt, coverImage, coverWidth, coverHeight, categories } =
 		data.meta;
 	const { PostContent } = data;
 	const locations = data.meta.map
