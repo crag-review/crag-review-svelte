@@ -12,9 +12,9 @@
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
-<h1>Klettergebiete</h1>
+<h1 class="mb-4">Klettergebiete</h1>
 
-<PostsList posts={data.posts} />
+ <PostsList posts={data.posts} />
 
 <Pagination currentPage={1} totalPosts={data.total} />
 

@@ -1,41 +1,19 @@
 <script>
 	import { base } from '$app/paths';
+	import { Card, Button, Toggle } from 'flowbite-svelte';
+	import { ArrowRightOutline } from 'flowbite-svelte-icons';
 
-	export let posts = []
+	export let posts = [];
 </script>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 ...">
 
-
-<ul class="posts-list">
-	{#each posts as post}
-		<li>
-			<article>
-				<a href="{base}/blog/{post.slug}">
-					<img
-					src={base}{post.coverImage}
-					alt=""
-					width={post.coverWidth}
-					height={post.coverHeight}
-					style="ratio: {post.coverWidth} / {post.coverHeight}"
-					/>
-					<h2>
-						{post.title}
-					</h2>
-				</a>
-			</article>
-
-			<p>{post.excerpt}</p>
-		</li>
-	{/each}
-</ul>
-
-<style>
-	ul {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 50px;
-		justify-content: center;
-		}
-	li {
-		max-width: 300px;
-	}
-</style>
+{#each posts as post}
+		<Card img="{base}{post.coverImage}"  class="">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{post.title}</h5>
+			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">{post.excerpt}</p>
+			<Button href="{base}/blog/{post.slug}">
+				Details <ArrowRightOutline class="w-6 h-6 ms-2 text-white" />
+			</Button>
+		</Card>
+{/each}
+</div>

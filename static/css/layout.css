@@ -3,13 +3,12 @@
 *:after {
 	box-sizing: border-box;
 	font-family: inherit;
-	max-width: 100%;
 }
 
 main {
 	width: 100%;
 	max-width: 90rem;
-	margin: 6rem auto;
+	margin: 0 auto;
 	padding: 0 1rem;
 }
 

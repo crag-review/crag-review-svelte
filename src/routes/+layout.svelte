@@ -1,5 +1,5 @@
-<!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script>
+	import '../app.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { currentPage, isMenuOpen } from '../lib/assets/js/store.js';
@@ -11,8 +11,14 @@
 	import { base } from '$app/paths';
 	export let data;
 
-	const transitionIn = { delay: 150, duration: 150 };
-	const transitionOut = { duration: 100 };
+	const transitionIn = {
+		delay: 150,
+		duration: 150
+	};
+
+	const transitionOut = {
+		duration: 100
+	};
 
 	/**
 	 * Updates the global store with the current path. (Used for highlighting
@@ -28,10 +34,12 @@
 	 * own preloadData() calls here, too.
 	 **/
 	onMount(() => {
-		const navRoutes = navItems.map((item) => base+item.route);
+		const navRoutes = navItems.map((item) => base + item.route);
 		preloadCode(...navRoutes);
 	});
 </script>
+
+<!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 
 <svelte:head>
 	<link rel="stylesheet" href="{base}/css/vars.css" />
@@ -41,18 +49,12 @@
 	<link rel="stylesheet" href="{base}/css/layout.css" />
 	<link rel="stylesheet" href="{base}/css/components.css" />
 	<link rel="stylesheet" href="{base}/css/header-and-footer.css" />
-	<link rel="stylesheet" href="{base}/css/forms.css" />
 	<link rel="stylesheet" href="{base}/css/animation.css" />
 	<link rel="stylesheet" href="{base}/css/utilities.css" />
 	<link rel="stylesheet" href="{base}/css/code.css" />
 	<link rel="stylesheet" href="{base}/css/prism.css" />
 	<link rel="icon" href="{base}/favicon.png" />
-	<link
-		rel="alternate"
-		type="application/rss+xml"
-		title={siteTitle}
-		href="{siteLink}api/rss.xml"
-	/>
+	<link rel="alternate" type="application/rss+xml" title={siteTitle} href="{siteLink}api/rss.xml" />
 </svelte:head>
 
 <!--
@@ -60,11 +62,13 @@
 	actual contents will show up.
 -->
 <div class="layout" class:open={$isMenuOpen}>
-	<Header />
+	<Header></Header>
 	{#key data.path}
 		<main id="main" tabindex="-1" in:fade|global={transitionIn} out:fade|global={transitionOut}>
 			<slot />
 		</main>
 	{/key}
-	<Footer />
+	<Footer></Footer>
 </div>
+
+<style></style>

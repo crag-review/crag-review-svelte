@@ -9,6 +9,7 @@ coverImage: "/images/hohe-wand-multi-pitch.jpg"
 coverWidth: 20
 coverHeight: 15
 excerpt: Mehrseillängen auf der Hohen Wand in den Gutensteiner Alpen
+location: [47.8296609, 16.0857361]
 ---
 
 ## Beserlpark
@@ -17,3 +18,10 @@ Von Wien fährt man mit einem beliebigen Zug nach Wr.Neustadt und dann mit dem R
 **Haltestelle:** Grünbach am Schneeberg Bahnhof	
 
 Topo: [bergsteigen.com](https://www.bergsteigen.com/touren/klettern/beserlpark-hohe-wand/)
+
+## Hochempor Verschneidung
+Um zu dieser ultra klasichen Route zu kommen muss man von Wien eine Anfahrt von etwa 1,5 Stunden in Kauf nehmen. Dazu kommt ein Zustieg von etwa einer halben Stunde. Dafür wird man mit einer der schönsten Verschneidungen auf der Hohen Wand belohnt. 
+
+**Haltestelle:** Stollhof Ramhofweg	
+
+Topo: [bergsteigen.com](https://www.bergsteigen.com/touren/klettern/hochempor-verschneidung-hohe-wand/)

@@ -9,6 +9,8 @@ coverImage: "/images/schneeberg.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: Mehrseillängen im Rax-Schneeberg-Gebiet
+location: [47.675887, 15.749087]
+
 ---
 
 ## Direkte Preinerwandplatte

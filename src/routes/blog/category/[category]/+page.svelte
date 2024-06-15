@@ -18,8 +18,7 @@
 	<title>Category: {category}</title>
 </svelte:head>
 
-
-<h1>{category}</h1>
+<h1 class="mb-4">{category}</h1>
 
 {#if posts.length}
 	<PostsList posts={posts} />
@@ -29,8 +28,3 @@
 
 	<p><a href="{base}/blog">Back to blog</a></p>
 {/if}
-<style>
-	h1 {
-		text-align: center;
-	}
-</style>
