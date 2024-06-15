@@ -9,9 +9,11 @@ coverImage: "/images/amstetten.jpg"
 coverWidth: 16
 coverHeight: 9
 excerpt: Tiefenbach und Sarmingstein, eine Liste mit Klettergärten rund um Amstetten
+location: [48.2081, 16.3713]
 ---
 
 ## Tiefenbach
+
 Mit dem Zug nach Amstetten und dann mit dem Bus nach Tiefenbach ist dieses Klettergebiet in etwa 1,5 Stunden von Wien erreichbar. Alternativ kann in Amstetten ein Rail & Drive ausgeborgt werden.<br>
 
 **Haltestelle:** Ardagger-Markt Donaubrücke/Tiefenbach

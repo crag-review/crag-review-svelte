@@ -14,7 +14,7 @@
 
 <h1>Klettergebiete</h1>
 
-<PostsList posts={data.posts} />
+ <PostsList posts={data.posts} />
 
 <Pagination currentPage={1} totalPosts={data.total} />
 

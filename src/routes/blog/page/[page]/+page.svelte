@@ -1,23 +1,25 @@
 <!-- This file handles any /blog/page/x route for pagination -->
 <script>
-	import PostsList from '$lib/components/PostsList.svelte'
-	import Pagination from '$lib/components/Pagination.svelte'
-  import { postsPerPage, siteDescription } from '$lib/config'
+	import PostsList from '$lib/components/PostsList.svelte';
+	import Pagination from '$lib/components/Pagination.svelte';
+	import { postsPerPage, siteDescription } from '$lib/config';
 	import { base } from '$app/paths';
+	import ClimbingMap from '$lib/components/ClimbingMap.svelte';
+	import {Accordion, AccordionItem} from 'flowbite-svelte';
 
-	export let data
-	const { page, totalPosts, posts } = data
+	export let data;
+	const { page, totalPosts, posts } = data;
 
-	$: lowerBound = (page * postsPerPage) - (postsPerPage - 1) || 1
-	$: upperBound = Math.min(page * postsPerPage, totalPosts)
+	const locations = [[50, 50]];
+
+	$: lowerBound = page * postsPerPage - (postsPerPage - 1) || 1;
+	$: upperBound = Math.min(page * postsPerPage, totalPosts);
 </script>
-
 
 <svelte:head>
 	<title>Blog - page {page}</title>
 	<meta data-key="description" name="description" content={siteDescription} />
 </svelte:head>
-
 
 <!-- TODO: this is duplicated across multiple `+page.svelte` files -->
 {#if posts.length}
