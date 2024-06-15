@@ -1,6 +1,7 @@
 <!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
 	import { base } from '$app/paths';
+	import { Button } from 'flowbite-svelte';
 
 	export let data;
 
@@ -28,7 +29,7 @@
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<img
 		class="cover-image"
-		src={base}{coverImage}
+		src={base}/images/main/{coverImage}
 		alt=""
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
@@ -50,16 +51,10 @@
 	</div>
 	{#if categories}
 		<aside class="post-footer">
-			<h2>Posted in:</h2>
-			<ul class="post-footer__categories">
+			<h2 class="mt-5">Posted in:</h2>
 				{#each categories as category}
-					<li>
-						<a href="{base}/blog/category/{category}/">
-							{category}
-						</a>
-					</li>
+					<Button href="{base}/blog/category/{category}/" class="my-5 mr-5" pill>{category}</Button>
 				{/each}
-			</ul>
 		</aside>
 	{/if}
 </article>

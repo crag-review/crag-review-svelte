@@ -5,7 +5,7 @@ updated: '2024-04-09'
 categories:
   - 'sportklettern'
   - 'Klettern'
-coverImage: '/images/schneeberg.jpg'
+coverImage: 'schneeberg.jpg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Klettern im Rax-Schneeberg-Gebiet

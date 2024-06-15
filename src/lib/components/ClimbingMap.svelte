@@ -48,6 +48,6 @@
 <style>
 	@import 'leaflet/dist/leaflet.css';
 	main div {
-		height: 600px;
+		height: 60vh;
 	}
 </style>

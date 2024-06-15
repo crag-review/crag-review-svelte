@@ -5,7 +5,7 @@ updated: '2024-04-27'
 categories:
   - 'Mehrseillängen'
   - 'Klettern'
-coverImage: '/images/hohe-wand-multi-pitch.jpg'
+coverImage: 'hohe-wand-multi-pitch.jpg'
 coverWidth: 20
 coverHeight: 15
 excerpt: Mehrseillängen auf der Hohen Wand in den Gutensteiner Alpen

@@ -5,7 +5,7 @@ updated: '2024-04-09'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: '/images/wachau.jpg'
+coverImage: 'wachau.jpg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Klettergärten im Waldviertel

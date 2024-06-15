@@ -5,7 +5,7 @@ updated: '2024-05-01'
 categories:
   - 'Mehrseillängen'
   - 'Klettern'
-coverImage: '/images/mixnitz-multi-pitch.jpg'
+coverImage: 'mixnitz-multi-pitch.jpg'
 coverWidth: 20
 coverHeight: 15
 excerpt: Mehrseillängen rund um Mixnitz

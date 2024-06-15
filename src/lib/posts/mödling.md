@@ -5,7 +5,7 @@ updated: '2024-04-09'
 categories:
   - 'sportklettern'
   - 'Klettern'
-coverImage: '/images/mödling.jpg'
+coverImage: 'mödling.jpg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Klettergärten in Mödling und Umgebung

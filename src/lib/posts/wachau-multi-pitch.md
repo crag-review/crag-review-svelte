@@ -5,7 +5,7 @@ updated: '2024-04-09'
 categories:
   - 'Mehrseillängen'
   - 'Klettern'
-coverImage: '/images/wachau-mulit-pitch.jpg'
+coverImage: 'wachau-mulit-pitch.jpg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Mehrseillängen in Wachau und Umgebung

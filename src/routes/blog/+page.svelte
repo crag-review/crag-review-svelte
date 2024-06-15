@@ -12,7 +12,7 @@
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
-<h1 class="mb-4">Klettergebiete</h1>
+<h1 class="my-5 text-4xl font-extrabold">Klettergebiete</h1>
 
  <PostsList posts={data.posts} />
 
