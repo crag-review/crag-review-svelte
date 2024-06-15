@@ -3,7 +3,7 @@ title: 'Sportklettern im Waldviertel'
 date: '2024-04-09'
 updated: '2024-04-09'
 categories:
-  - 'Sportklettern'
+  - 'sportklettern'
   - 'Klettern'
 coverImage: 'wachau.jpg'
 coverWidth: 16
