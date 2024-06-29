@@ -5,7 +5,7 @@
 
 	export let posts = [];
 </script>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 ...">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mb-5 ...">
 
 {#each posts as post}
 		<Card img="{base}/images/small/{post.coverImage}" href="{base}/blog/{post.slug}">

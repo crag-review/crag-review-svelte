@@ -44,23 +44,6 @@ li {
 	margin-bottom: 0.25rem;
 }
 
-.posts-list {
-	list-style-type: none;
-	padding: 0;
-
-	li {
-		margin-bottom: 6rem;
-	}
-
-	img + h2 {
-		margin-top: 1rem;
-	}
-
-	a {
-		display: block;
-	}
-}
-
 .post-footer__categories {
 	padding: 0;
 	display: flex;

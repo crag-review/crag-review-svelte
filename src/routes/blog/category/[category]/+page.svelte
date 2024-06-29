@@ -15,10 +15,10 @@
 
 
 <svelte:head>
-	<title>Category: {category}</title>
+	<title>	Kategorie: {category}</title>
 </svelte:head>
 
-<h1 class="mb-4">{category}</h1>
+<h1 class="my-5 text-4xl font-extrabold">{category}</h1>
 
 {#if posts.length}
 	<PostsList posts={posts} />
