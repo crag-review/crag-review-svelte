@@ -13,13 +13,13 @@ location: [46.62678,12.21701]
 zoom: 13
 map:
   - title: Landro
-    slug: hochpustertal/landro
+    slug: hochpustertal#landro
     location: [46.6254198,12.2250614]
-  - title: Landro
-    slug: hochpustertal/landro
+  - title: Landro Höhle
+    slug: hochpustertal#landro-höhle
     location: [46.621440,12.231074]
   - title: Militärklettergarten
-    slug: hochpustertal/militärklettergarten
+    slug: hochpustertal#militärklettergarten
     location: [46.6438510,12.2291800]
 ---
 
