@@ -12,10 +12,10 @@ Benjamin Wieser, <br>
 Hinterleiten 10 <br>
 3263 Randegg
 
-Ein Projekt von [wieser-engineering](https://www.wieser-engineering.xyz)
+Ein Projekt von [Vorstieg Software](https://www.vorstieg.eu)
 
 ### Kontakt
 
-https://www.wieser-engineering.xyz/contactus
+Email: [office@vorstieg.eu](mailto:office@vorstieg.eu)
 
 </div>

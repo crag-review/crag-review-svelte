@@ -14,20 +14,26 @@ location: [48.1229, 14.87206]
 
 ## Tiefenbach
 
-Mit dem Zug nach Amstetten und dann mit dem Bus nach Tiefenbach ist dieses Klettergebiet in etwa 1,5 Stunden von Wien erreichbar. Alternativ kann in Amstetten ein Rail & Drive ausgeborgt werden.<br>
+Tiefenbach ist ein idyllisch gelegenes Klettergebiet unweit von Amstetten und bietet eine Vielzahl an Routen in verschiedenen Schwierigkeitsgraden. Die beeindruckenden Granitwände sind ideal für Sportkletterer, die eine Mischung aus technischen Herausforderungen und ausdauernden Zügen suchen.
+
+Die Anreise ist unkompliziert: Von Wien erreicht man Amstetten bequem mit dem Zug, und von dort aus geht es mit dem Bus weiter nach Tiefenbach. Die gesamte Fahrtzeit beträgt etwa 1,5 Stunden. Wer flexibler unterwegs sein möchte, kann sich in Amstetten ein Rail & Drive-Auto mieten, um direkt zum Kletterspot zu gelangen.
 
 **Haltestelle:** Ardagger-Markt Donaubrücke/Tiefenbach
 
-Ein etwas veraltetes topo ist hier zu finden: [guglhupfclimbing](https://guglhupfclimbing.at/download/m4f/tiefenbach.pdf)
+Ein etwas älteres Topo ist hier verfügbar: [guglhupfclimbing](https://guglhupfclimbing.at/download/m4f/tiefenbach.pdf)
 
-Auf "the Crag" gibt es eine aktuelle Übersicht über alle Routen [the Crag](https://www.thecrag.com/de/klettern/austria/wien-vienna-area/area/346959531)
+Für eine aktuellere Übersicht über alle Routen empfiehlt sich ein Blick auf „the Crag“: [the Crag](https://www.thecrag.com/de/klettern/austria/wien-vienna-area/area/346959531)
+
+Neben den abwechslungsreichen Kletterrouten punktet Tiefenbach mit seiner ruhigen Lage und einer angenehmen Atmosphäre. Nach einem erfolgreichen Klettertag laden die nahegelegenen Donauufer zu einer entspannten Pause ein, bevor es zurück nach Wien geht.
 
 ## Sarmingstein
 
-Mit dem Zug nach Amstetten und dann mit dem Bus zum Sarmingstein ist dieses Klettergebiet in etwa 2 Stunden von Wien erreichbar. Alternativ kann in Amstetten ein Rail & Drive ausgeborgt werden.<br>
+Sarmingstein ist ein weiteres lohnendes Ziel für Kletterer, die von Wien aus anreisen. Die Felsen liegen inmitten einer malerischen Naturlandschaft und bieten sowohl Sportkletterrouten als auch Boulderprobleme für alle Könnensstufen.
+
+Die Anreise erfolgt ähnlich wie nach Tiefenbach: Zunächst mit dem Zug nach Amstetten, dann mit dem Bus weiter bis Sarmingstein. Die Fahrt dauert insgesamt rund zwei Stunden. Auch hier steht in Amstetten eine Rail & Drive-Option zur Verfügung, falls man die letzte Strecke lieber mit dem Auto zurücklegen möchte.
 
 **Haltestelle:** Sarmingstein Ort
 
-Ein topo ist hier zu finden: [woidkraxler](https://woidkraxler.at/wp-content/uploads/2022/07/Gloxwald-Sarmingstein-2022.pdf)
+Ein detailliertes Topo gibt es hier: [woidkraxler](https://woidkraxler.at/wp-content/uploads/2022/07/Gloxwald-Sarmingstein-2022.pdf)
 
-Zusätzlich zum Klettergarten kann am Sarmingstein auch gebouldert werden.
+Ob Tiefenbach oder Sarmingstein – beide Gebiete bieten tolle Möglichkeiten für Tagesausflüge von Wien aus und sind mit öffentlichen Verkehrsmitteln gut erreichbar. Ein Besuch lohnt sich auf jeden Fall!
