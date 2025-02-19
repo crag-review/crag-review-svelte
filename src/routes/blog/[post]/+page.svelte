@@ -30,31 +30,30 @@
 	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
 </svelte:head>
 
-<article >
-	<div class="mx-auto h-[60vh] bg-cover bg-fixed bg-center bg-no-repeat shadow-lg"
-	style="background-image:url('{base}/images/main/{coverImage}');">
+<div class="mx-auto h-[60vh] bg-cover bg-fixed bg-center bg-no-repeat shadow-lg" style="background-image:url('{base}/images/main/{coverImage}');">
 
-	</div>
-	<h1 class="text-4xl mt-5">{title}</h1>
+</div>
+<article class="flex flex-col items-center justify-center">
+
+	<h1 class="text-4xl mt-5 mb-5">{title}</h1>
 
 	{#if !!locations}
 
-		<Accordion >
-			<AccordionItem open>
-				<ClimbingMap {locations} {zoom} {center}></ClimbingMap>
-			</AccordionItem>
-		</Accordion>
+		<ClimbingMap {locations} {zoom} {center}></ClimbingMap>
 	{/if}
-
-	<div class="prose lg:proxe-xl">
-		<svelte:component this={PostContent} />
+	<div class="justify-center flex items-center mt-5">
+		<div class="prose lg:prose-xl w-full">
+			<svelte:component this={PostContent} />
+		</div>
 	</div>
-	{#if categories}
-		<aside class="post-footer">
-			<h2 class="mt-5">Posted in:</h2>
-				{#each categories as category}
-					<Button href="{base}/blog/category/{category}/" class="my-5 mr-5" pill>{category}</Button>
-				{/each}
-		</aside>
-	{/if}
+
+
 </article>
+{#if categories}
+<aside class="post-footer">
+	<h2 class="mt-5">Posted in:</h2>
+		{#each categories as category}
+			<Button href="{base}/blog/category/{category}/" class="my-5 mr-5" pill>{category}</Button>
+		{/each}
+</aside>
+{/if}

@@ -1,4 +1,4 @@
-## Crag Review
+## Felsverzeichnis
 
 This the source code of a blog that provides a curated list of climbing crags that are accessabel by public transport from Vienna.
 

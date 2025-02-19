@@ -7,11 +7,10 @@
 
 export const siteTitle = 'Klettergebiete rund um Wien';
 export const siteDescription = 'Finde Klettergebiete die von Wien aus öffentlich erreichbar sind';
-export const siteLink = 'https://crag-review.wieser-engineering.xyz/';
-export const siteAuthor = 'Benjamin Wieser';
+export const siteLink = 'https://felsverzeichnis.vorstieg.eu/';
 
 // Controls how many posts are shown per page on the main blog index pages
-export const postsPerPage = 10;
+export const postsPerPage = 50;
 
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
