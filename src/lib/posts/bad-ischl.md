@@ -3,7 +3,7 @@ title: 'Sportklettern im Bad Ischl'
 date: '2024-10-14'
 updated: '2024-10-14'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'bad-ischl.jpg'
 coverWidth: 16

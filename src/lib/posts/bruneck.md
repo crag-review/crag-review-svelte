@@ -3,7 +3,7 @@ title: 'Sportklettern im Bruneck'
 date: '2024-10-14'
 updated: '2024-10-14'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'bruneck.jpg'
 coverWidth: 16

@@ -16,11 +16,11 @@ export const postsPerPage = 50;
 export const navItems = [
 	{
 		title: 'Hauptseite',
-		route: '/'
+		route: '/map'
 	},
 	{
 		title: 'Klettergebiete',
-		route: '/blog'
+		route: '/list'
 	},
 	{
 		title: 'Impressum',

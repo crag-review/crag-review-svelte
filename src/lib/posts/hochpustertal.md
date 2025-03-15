@@ -3,7 +3,7 @@ title: 'Sportklettern im Hochpustertal'
 date: '2024-10-14'
 updated: '2024-10-14'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'hochpustertal.jpg'
 coverWidth: 16

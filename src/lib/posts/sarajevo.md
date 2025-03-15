@@ -3,7 +3,7 @@ title: 'Sportklettern Sarajevo'
 date: '2024-08-16'
 updated: '2024-08-16'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'sarajevo.jpg'
 coverWidth: 16

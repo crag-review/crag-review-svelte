@@ -10,6 +10,16 @@ coverWidth: 20
 coverHeight: 15
 excerpt: Mehrseillängen rund um Mixnitz
 location: [47.3293, 15.3637]
+zoom: 14
+map:
+  - title: Roter Kamin
+    slug: mixnitz-multi-pitch#roter-kamin
+    location: [47.33561636563111, 15.389441386534566]
+    stop:
+      - name: Grünbach am Schneeberg Bahnhof
+        location: [47.331713971977095, 15.360276320342253]
+
+
 ---
 
 ## Roter Kamin

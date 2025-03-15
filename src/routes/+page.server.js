@@ -1,9 +1,5 @@
-import { base } from '$app/paths';
+import { redirect } from '@sveltejs/kit';
 
-/** @type {import('./$types').PageServerLoad} */
-export const load = async ({ url, fetch }) => {
-	const postRes = await fetch(`${url.origin}${base}/api/posts.json`);
-	const posts = await postRes.json();
-
-	return { posts };
-};
+export function load() {
+	redirect(302, '/map');
+}

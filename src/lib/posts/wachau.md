@@ -3,7 +3,7 @@ title: 'Sportklettern in der Wachau'
 date: '2024-04-09'
 updated: '2024-04-09'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'wachau.jpg'
 coverWidth: 16

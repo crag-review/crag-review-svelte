@@ -3,7 +3,7 @@ title: 'Sportklettern Rax-Schneeberg-Gebiet'
 date: '2024-04-09'
 updated: '2024-04-09'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'losenheim.jpg'
 coverWidth: 16

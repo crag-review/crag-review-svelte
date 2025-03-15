@@ -2,7 +2,7 @@
 	"name": "crag-reviw-nlog",
 	"version": "0.0.2",
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev --host",
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --ignore-path .gitignore --check -- plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -12,26 +12,28 @@
 		"@sveltejs/adapter-static": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
-		"autoprefixer": "^10.4.19",
+		"@tailwindcss/postcss": "^4.0.12",
+		"@tailwindcss/typography": "^0.5.13",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
-		"flowbite": "^2.3.0",
-		"flowbite-svelte": "^0.46.1",
+		"leaflet": "^1.9.4",
 		"mdsvex": "^0.11.0",
 		"postcss": "^8.4.38",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
-		"prettier-plugin-tailwindcss": "^0.6.4",
+		"prettier-plugin-tailwindcss": "^0.6.11",
 		"rehype-autolink-headings": "^6.1.1",
 		"rehype-slug": "^5.1.0",
 		"svelte": "^4.2.7",
 		"svelte-preprocess": "^5.0.3",
-		"tailwindcss": "^3.4.4",
-		"vite": "^5.0.12",
-		"@tailwindcss/typography": "^0.5.13",
-		"flowbite-svelte-icons": "^1.6.1",
-		"leaflet": "^1.9.4"
+		"tailwindcss": "^4.0.12",
+		"vite": "^5.0.12"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^6.5.2",
+		"@tailwindcss/vite": "^4.0.12",
+		"leaflet-routing-machine": "^3.2.12"
+	}
 }
