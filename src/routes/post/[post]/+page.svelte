@@ -37,8 +37,9 @@
 	<div use:resize
 			 class="box border-1 border-gray-200 fixed sm:left-auto left-0 right-0 mx-2 sm:!mx-2 sm:right-10 sm:!h-auto top-1/2 lg:!top-30 sm:!top-25 bottom-5 lg:!bottom-20 sm:!bottom-10 w-auto sm:w-[25rem] lg:w-[40rem] bg-white rounded-3xl sm:!rounded-3xl shadow-md z-[2000]">
 		<div class="bg-gray-200 h-1 w-12 rounded-full justify-self-center mt-2 sm:hidden"></div>
-		<div class="justify-self-center sm:justify-self-start w-screen sm:w-auto px-10">
-			<h1 class="text-2xl font-black my-0 text-slate-800 pt-6 pb-5">{title}</h1>
+		<a class="fixed cursor-pointer bg-white py-4 px-5 sm:px-6 hover:text-white hover:bg-ink rounded-full border-1 border-gray-200 transition-all shadow-md ml-3 -mt-22 sm:mt-0 sm:-ml-22 z-[5000]" href="{base}/map"><i class="fa-solid fa-arrow-left text-lg"></i></a>
+		<div class="justify-self-center sm:justify-self-start w-screen sm:w-auto px-10 flex flex-row  pt-6 pb-5">
+			<h1 class="text-2xl font-black my-0 text-slate-800">{title}</h1>
 		</div>
 		<div class="overflow-y-scroll w-screen sm:w-auto justify-self-center px-10 mb-[10rem] sm:mb-[7rem] overflow-x-hidden" style="height: -webkit-fill-available">
 			{#if categories}
