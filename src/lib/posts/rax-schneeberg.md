@@ -10,6 +10,14 @@ coverWidth: 16
 coverHeight: 9
 excerpt: Klettern im Rax-Schneeberg-Gebiet
 location: [47.7889, 15.8451]
+zoom: 14
+map:
+  - title: Wasserfall Klettergarten Losenheim
+    slug: rax-schneeberg#wasserfall-klettergarten-losenheim
+    location: [47.7951980,15.8565029]
+    stop:
+      - name: Puchberg am Schneeberg/Sonnleiten
+        location: [47.790828, 15.863153]
 ---
 
 ## Wasserfall Klettergarten Losenheim

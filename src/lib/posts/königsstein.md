@@ -9,15 +9,15 @@ coverImage: 'königsstein.png'
 coverWidth: 16
 coverHeight: 9
 excerpt: Königstein, eine Liste an Klettergebieten
-location: [ 46.62678, 12.21701 ]
-zoom: 14
+location: [ 49.60501494376908, 11.63453567588121 ]
+zoom: 13
 map:
   - title: Steinberg
     slug: königstein/steinberg
-    location: [46.6254198,12.2250614]
+    location: [49.6047817,11.6538595]
   - title: Steinerne-Stadt
-    slug: königstein/steinberg
-    location: [46.6254198,12.2250614]
+    slug: königstein/steinerne-stadt
+    location: [49.63497391954552, 11.602130821951587]
 ---
 
 ## Steinberg
