@@ -10,6 +10,14 @@ coverWidth: 16
 coverHeight: 9
 excerpt: Aufhofen, ein wunderschöner Klettergarten in Bruneck
 location: [46.81640,11.94912]
+zoom: 15
+map:
+  - title: Villa Santa Caterina - Aufhofen
+    slug: bruneck
+    location: [46.8182957,11.9483151]
+    stop: 
+      - name: Aufhofen
+        location: [46.81437112458529, 11.945496602166399]
 ---
 
 ## Villa Santa Caterina - Aufhofen

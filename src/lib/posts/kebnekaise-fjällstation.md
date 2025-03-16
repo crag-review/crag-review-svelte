@@ -10,6 +10,10 @@ coverWidth: 20
 coverHeight: 15
 excerpt: Bouldern kebnekaise
 location: [67.859926, 18.609046]
+map:
+  - title: Kebnekaise
+    slug: kebnekaise-fjällstation
+    location: [67.859926, 18.609046]
 ---
 
 Im Tal neben der Basisstation des Kebnekaise gibt es eine große Anzahl an Granit blöcken, viele davon wharscheinlich noch nie bebouldert. Im Bergführerbüro können Matten und schuhe ausgeborgt werden.
