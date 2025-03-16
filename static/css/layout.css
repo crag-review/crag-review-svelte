@@ -5,13 +5,6 @@
 	font-family: inherit;
 }
 
-main {
-	width: 100%;
-	max-width: 90rem;
-	margin: 0 auto;
-	padding: 0 1rem;
-}
-
 .layout {
 	display: grid;
 	grid-template-columns: 100%;

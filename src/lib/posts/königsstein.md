@@ -3,13 +3,14 @@ title: 'Sportklettern rund um Königsstein'
 date: '2024-10-14'
 updated: '2024-10-14'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'königsstein.png'
 coverWidth: 16
 coverHeight: 9
-excerpt: Königstein, eine Liste an Klettergebieten 
-location: [46.62678,12.21701]
+excerpt: Königstein, eine Liste an Klettergebieten
+location: [ 46.62678, 12.21701 ]
+zoom: 14
 map:
   - title: Steinberg
     slug: königstein/steinberg

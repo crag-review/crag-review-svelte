@@ -3,7 +3,7 @@ title: 'Sportklettern in Mödling und Umgebung'
 date: '2024-04-09'
 updated: '2024-04-09'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'mödling.jpg'
 coverWidth: 16
@@ -14,16 +14,28 @@ zoom: 14
 map:
   - title: Roter Ofen
     slug: mödling#roter-ofen
-    location: [48.08986,16.23916]
+    location: [48.08949963471001, 16.238660492817914]
+    stop: 
+      - name: Hinterbrühl Brühlegg
+        location: [48.08590220179717, 16.242685270922568]
   - title: Efeugrat
     slug: mödling#efeugrat
     location: [48.08088,16.27030]
+    stop:
+      - name: Bahnhof Mödling
+        location: [48.08580, 16.29538]
   - title: Lausbubenwand
     slug: mödling#lausbubenwand
     location: [48.08049,16.27297]
+    stop:
+      - name: Bahnhof Mödling
+        location: [48.08580, 16.29538]
   - title: Glocknergrat
     slug: mödling#glocknergrat
     location: [48.08245, 16.27625]
+    stop:
+      - name: Bahnhof Mödling
+        location: [48.08580, 16.29538]
 ---
 
 ## Roter Ofen

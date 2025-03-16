@@ -13,7 +13,7 @@ location: [48.0182711,16.1959914]
 zoom: 14
 map:
   - title: Kleines Verdon
-    slug: baden-bouldern/Kleines-Verdon
+    slug: baden-bouldern#Kleines-Verdon
     location: [48.0182711,16.1959914]
 ---
 

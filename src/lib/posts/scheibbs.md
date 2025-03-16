@@ -2,7 +2,7 @@
 title: 'Sportklettern bei Scheibbs'
 date: '2024-06-15'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'amstetten.jpg'
 excerpt: Klettergärten in Scheibbs

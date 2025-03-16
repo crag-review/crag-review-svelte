@@ -3,7 +3,7 @@ title: 'Sportklettern im Amstettner Raum'
 date: '2024-04-09'
 updated: '2024-04-09'
 categories:
-  - 'sportklettern'
+  - 'Sportklettern'
   - 'Klettern'
 coverImage: 'amstetten.jpg'
 coverWidth: 16
