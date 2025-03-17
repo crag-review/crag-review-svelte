@@ -2,7 +2,6 @@
 	import ClimbingMap from '$lib/components/ClimbingMap.svelte';
 	import { siteTitle } from '$lib/config.js';
 	import { base } from '$app/paths';
-	import { snapToBiggestHeight } from '../post/[post]/resize.js';
 
 	export let data;
 

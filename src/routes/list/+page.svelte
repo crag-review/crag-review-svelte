@@ -4,7 +4,7 @@
 	import { base } from '$app/paths';
 
 	export let data;
-	const { categories, posts } = data;
+	const { categories, posts} = data;
 </script>
 
 
