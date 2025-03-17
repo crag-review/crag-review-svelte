@@ -28,13 +28,9 @@ const config = {
 		prerender: {
 			entries: [
 				'*',
-				'/api/posts/page/*',
-				'/blog/category/*/page/',
-				'/blog/category/*/page/*',
-				'/blog/category/page/',
-				'/blog/category/page/*',
-				'/blog/page/',
-				'/blog/page/*'
+				'/about',
+				'/list',
+				'/map'
 			]
 		}
 	}
