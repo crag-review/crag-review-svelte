@@ -3,7 +3,8 @@
 	import { siteDescription } from '$lib/config';
 	import { base } from '$app/paths';
 
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 	const { categories, posts} = data;
 </script>
 

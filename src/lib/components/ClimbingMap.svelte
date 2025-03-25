@@ -1,171 +1,151 @@
 <script>
 	import { base } from '$app/paths';
-	import {slide} from 'svelte/transition';
+	import { slide } from 'svelte/transition';
+	import maplibregl from 'maplibre-gl';
+	import 'maplibre-gl/dist/maplibre-gl.css';
+	import { onMount } from 'svelte';
+	import { afterNavigate, goto } from '$app/navigation';
 
-	export let locations = [];
+	afterNavigate((_navigation) => {
+		fillLayers(locations)
+		if(!location.hash) map.flyTo({ center, zoom, pitch })
+	});
 
+	/** @type {{locations?: any, zoom?: number, center?: any, pitch?: number}} */
+	let {
+		locations = [],
+		zoom = 8,
+		center = [16.0, 48],
+		pitch = 60
+	} = $props();
 
-	export let zoom = 8;
-	export let center = [48, 16.0];
-	export let onMarkerClicked;
-
-	import { onMount, onDestroy } from 'svelte';
-
-	let mapElement;
+	let mapElement = $state();
 	let map;
-
-	let satelliteTileLayer;
-	let terrainTileLayer;
-	let basicTileLayer;
-	let tileLayerMenuOpen = false;
-
-	if (!onMarkerClicked)
-		onMarkerClicked = () => {
-		};
+	let tileLayerMenuOpen = $state(false);
+	let places;
+	let routes;
 
 	onMount(async () => {
-		await import('leaflet');
-		await import('leaflet-routing-machine');
-
-		const gpsIcon = L.icon({ iconUrl: base + '/icons/gps.svg', iconSize: [40, 40] });
-		const climberIcon = L.icon({ iconUrl: base + '/icons/climber.svg', iconSize: [40, 40] });
-		const stopIcon = L.icon({ iconUrl: base + '/icons/stop.svg', iconSize: [40, 40] });
-
-		satelliteTileLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-			attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+		map = new maplibregl.Map({
+			container: mapElement,
+			zoom: zoom,
+			center: center,
+			pitch: 0,
+			hash: true,
+			style: base + '/transport.json',
+			maxZoom: 18,
+			maxPitch: 75
 		});
 
-		terrainTileLayer = L.tileLayer('https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
-			attribution: '<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-			minZoom: 0,
-			maxZoom: 22,
-			accessToken: 'U5bdqKAQMXVq3eZ2U4EzDU4GnOCqcAxSlYWnrFvLzHVYojp6RqzS6UXT8PVGR1Y5'
+		map.addControl(
+			new maplibregl.GeolocateControl({
+				positionOptions: {
+					enableHighAccuracy: true
+				},
+				trackUserLocation: true
+			})
+		);
+
+		map.getCanvas().style.cursor = "default"
+
+		map.on('click', 'places', (e) => {
+			goto(e.features[0].properties.link);
 		});
 
-		basicTileLayer = L.tileLayer('https://tile.jawg.io/jawg-lagoon/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
-			attribution: '<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-			minZoom: 0,
-			maxZoom: 22,
-			accessToken: 'U5bdqKAQMXVq3eZ2U4EzDU4GnOCqcAxSlYWnrFvLzHVYojp6RqzS6UXT8PVGR1Y5'
+		map.on('load', async () => {
+			await drawLayers();
+			map.on('styledata', async () => drawLayers());
 		});
 
-		map = L.map(mapElement, {
-			zoomControl: false,
-			tap: !L.Browser.mobile,
-			layers: [basicTileLayer]
-		}).setView(center, zoom);
-
-		map.on('zoomend', function() {
-			if (map.getZoom() >= 10) {
-				map.eachLayer((layer) => {
-					if (layer instanceof L.Marker) {
-						layer.openTooltip();
-					}
-				});
-			} else {
-				map.eachLayer((layer) => {
-					if (layer instanceof L.Marker) {
-						layer.closeTooltip();
-					}
-				});
-			}
-		});
-		map.locate({ maxZoom: 8 });
-
-		map.on('locationfound', function(e) {
-			const radius = e.accuracy;
-			L.marker(e.latlng, { icon: gpsIcon }).addTo(map);
-			L.circle(e.latlng, radius).addTo(map);
+		map.on('mouseenter', 'places', function () {
+				map.getCanvas().style.cursor = 'pointer';
 		});
 
+		map.on('mouseleave', 'places', function () {
+			map.getCanvas().style.cursor = 'default';
+		});
+
+	});
+
+	function fillLayers(locations) {
+		places = {
+			'type': 'FeatureCollection',
+			'features': []
+		};
+		routes = {
+			'type': 'FeatureCollection',
+			'features': []
+		};
 		locations.forEach((location) => {
 			if (location.stop) {
-				location.stop.forEach((stop) => {
-					const routeControl = L.routing.control({
-						router: L.Routing.mapbox('pk.eyJ1Ijoicm9iaW5zdGVpbmVyIiwiYSI6ImNtODc2M2hqZjBldHIybHNmOXVnNjNmYTQifQ.TDivv6iEKWnTbJowCn9MAg'),
-						profile: 'foot',
-						fitSelectedRoutes: false,
-						waypoints: [stop.location, location.location],
-						lineOptions: { styles: [{ color: '#12538b', opacity: 1, weight: 5 }] },
-						createMarker: function() {
-							return null;
-						}
-					}).addTo(map);
-					routeControl.hide();
-					L.marker(stop.location, { icon: stopIcon })
-						.on('click', function() {
-							onMarkerClicked();
-							window.location.href = `${base}/post/${location.slug}`;
-						})
-						.addTo(map);
+				location.stop.forEach(async (stop) => {
+					addMarker(stop.location, 'stop', stop.name, `${base}/map/post/${location.slug}`);
+					if (stop.route) await addRoute(stop.route);
 				});
 			}
-			L.marker(location.location, { icon: climberIcon })
-				.on('click', function() {
-					onMarkerClicked();
-					window.location.href = `${base}/post/${location.slug}`;
-				})
-				.bindTooltip(location.title, { offset: [13, 0], permanent: true, direction: 'right' })
-				.addTo(map);
+			addMarker(location.location, 'climber', location.title, `${base}/map/post/${location.slug}`);
 		});
+		if (map?.loaded) drawLayers();
+	}
 
-		map.eachLayer((layer) => {
-			if (layer instanceof L.Marker) {
-				layer.closeTooltip();
-			}
-		});
-	});
+	async function drawLayers() {
+		map.addImage('climber', (await map.loadImage(base + '/icons/climber.png')).data);
+		map.addImage('stop', (await map.loadImage(base + '/icons/stop.png')).data);
+		map.getSource('places').setData(places);
+		map.getSource('routes').setData(routes);
+	}
 
-	onDestroy(async () => {
-		if (map) {
-			map.remove();
-		}
-	});
+	async function addRoute(file) {
+		const route = await (await fetch(`${base}/geojson/${file}`)).json(); // stored in static folder
+		routes.features = routes.features.concat(route.features);
+	}
 
-	function removeTileLayers() {
-		map.eachLayer((layer) => {
-			if (layer instanceof L.TileLayer) {
-				layer.remove();
-			}
+	function addMarker(location, icon, name, link) {
+		places.features.push({
+			'type': 'Feature',
+			'geometry': {
+				'type': 'Point',
+				'coordinates': location
+			},
+			'properties': { name, icon, link }
 		});
 	}
 
-	function setBasicTileLayer() {
-		removeTileLayers();
-		basicTileLayer.addTo(map);
+	function setTransportTileLayer() {
+		map.setStyle(base + '/transport.json');
 		tileLayerMenuOpen = false;
 	}
 
 	function setSatelliteTileLayer() {
-		removeTileLayers();
-		satelliteTileLayer.addTo(map);
+		map.setStyle(base + '/satellite.json');
 		tileLayerMenuOpen = false;
 	}
 
 	function setTerrainTileLayer() {
-		removeTileLayers();
-		terrainTileLayer.addTo(map);
+		map.setStyle(base + '/terrain.json');
 		tileLayerMenuOpen = false;
 	}
 </script>
 
 <div class="sticky h-screen w-screen top-0 bottom-0 left-0 right-0" bind:this={mapElement}></div>
-<div class='custom-popup' id='map'></div>
-<div class="fixed sm:left-15 left-5 top-20 sm:top-22 z-[1000]" on:mouseleave={() => tileLayerMenuOpen = false}>
-	<button class="cursor-pointer bg-white p-4 px-5 hover:text-white hover:bg-ink rounded-full border-1 border-gray-200 transition-all shadow-md"
-					on:mouseenter={() => tileLayerMenuOpen = !tileLayerMenuOpen} class:rounded-b-none={tileLayerMenuOpen}><i class="fa-solid fa-layer-group"></i></button>
+<div class="fixed sm:left-15 left-5 top-35 sm:top-37 z-[1000]" onmouseleave={() => tileLayerMenuOpen = false}>
+	<button
+		class="cursor-pointer bg-white p-3 px-4 sm:p-2 sm:px-3 hover:text-white hover:bg-ink rounded-full border-1 border-gray-200 transition-all shadow-md"
+		onmouseenter={() => tileLayerMenuOpen = !tileLayerMenuOpen} class:rounded-b-none={tileLayerMenuOpen}><i
+		class="fa-solid fa-layer-group"></i></button>
 	{#if tileLayerMenuOpen}
 		<div class="flex flex-col justify-center" in:slide={{duration: 200}} out:slide={{duration: 200}}>
 			<button class="cursor-pointer p-3 py-2 hover:text-white hover:bg-ink bg-white border-1 border-gray-200"
-							on:click={setBasicTileLayer}>
+							onclick={setTransportTileLayer}>
 				<i class="fa-solid fa-bus-simple"></i>
 			</button>
 			<button class="cursor-pointer p-3 py-2 hover:text-white hover:bg-ink bg-white border-1 border-gray-200"
-							on:click={setSatelliteTileLayer}>
+							onclick={setSatelliteTileLayer}>
 				<i class="fa-solid fa-satellite"></i>
 			</button>
-			<button class="cursor-pointer p-3 py-2 hover:text-white hover:bg-ink bg-white border-1 border-gray-200 rounded-full rounded-t-none"
-							on:click={setTerrainTileLayer}>
+			<button
+				class="cursor-pointer p-3 py-2 hover:text-white hover:bg-ink bg-white border-1 border-gray-200 rounded-full rounded-t-none"
+				onclick={setTerrainTileLayer}>
 				<i class="fa-solid fa-mountain"></i>
 			</button>
 		</div>
@@ -175,4 +155,43 @@
 <style>
     @import 'leaflet/dist/leaflet.css';
     @import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
+    @import "tailwindcss";
+
+    :global(.maplibregl-ctrl-top-right) {
+        @apply fixed left-15 top-20 right-auto z-[1000];
+    }
+
+    :global(.maplibregl-ctrl-top-right) {
+        @media (width <= 40rem) {
+            @apply left-5 top-17;
+        }
+    }
+
+    :global(.maplibregl-ctrl-group) {
+        @apply cursor-pointer bg-white rounded-full border-1 border-gray-200 transition-all;
+    }
+
+    :global(.maplibregl-ctrl-group button) {
+        @apply cursor-pointer bg-white rounded-full w-12 h-12;
+    }
+
+    :global(.maplibregl-ctrl-group button) {
+        @media (width <= 40rem) {
+            @apply w-13 h-13;
+        }
+    }
+
+    :global(.maplibregl-ctrl-group:not(:empty)) {
+        @apply shadow-md;
+    }
+
+    :global(.maplibregl-ctrl-bottom-right) {
+        @apply bottom-2 right-2;
+    }
+
+    :global(.maplibregl-ctrl-bottom-right) {
+        @media (width <= 40rem) {
+            @apply bottom-18 right-2;
+        }
+    }
 </style>

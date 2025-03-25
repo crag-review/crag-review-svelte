@@ -5,22 +5,21 @@ updated: '2024-10-14'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'hochpustertal.jpg'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'hochpustertal.jpg'
 excerpt: Hochpustertal, eine Liste an Klettergebieten 
-location: [46.62678,12.21701]
+location: [12.21701, 46.62678]
 zoom: 13
 map:
   - title: Landro
     slug: hochpustertal#landro
-    location: [46.6254198,12.2250614]
+    location: [12.2250614, 46.6254198]
   - title: Landro Höhle
     slug: hochpustertal#landro-höhle
-    location: [46.621440,12.231074]
+    location: [12.231074, 46.621440]
   - title: Militärklettergarten
     slug: hochpustertal#militärklettergarten
-    location: [46.6438510,12.2291800]
+    location: [12.2291800, 46.6438510]
 ---
 
 Ein umfassendes Topo für das Hochpustertal mit detaillierten Informationen zu den Klettergebieten, Routen und Schwierigkeitsgraden kann hier gefunden werden: [drei-zinnen.info](https://www.drei-zinnen.info/media/a5ca3153-0af6-4c70-a1cd-49e6d9c2c1c1/broschure-klettergaerten-definitiv.pdf). Dieses Topo bietet eine wertvolle Orientierung für alle Kletterbegeisterten, die die spektakulären Felswände der Region erkunden möchten.

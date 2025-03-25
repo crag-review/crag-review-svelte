@@ -5,19 +5,18 @@ updated: '2024-04-09'
 categories:
   - 'Mehrseillängen'
   - 'Klettern'
-coverImage: 'schneeberg.jpg'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'schneeberg.jpg'
 excerpt: Mehrseillängen im Rax-Schneeberg-Gebiet
-location: [47.675887, 15.749087]
+location: [15.749087, 47.675887]
 zoom: 14
 map:
   - title: Direkte Preinerwandplatte
     slug: rax-schneeberg-multi-pitch#direkte-preinerwandplatte
-    location: [47.7012064,15.7333238]
+    location: [15.7333238, 47.7012064]
     stop:
       - name: Prein an der Rax/Griesleiten
-        location: [47.675119899399654, 15.749070398342548]
+        location: [15.749070398342548, 47.675119899399654]
 ---
 
 ## Direkte Preinerwandplatte

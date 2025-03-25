@@ -5,18 +5,17 @@ updated: '2024-04-27'
 categories:
   - 'Mehrseillängen'
   - 'Klettern'
-coverImage: 'hohe-wand-multi-pitch.jpg'
-coverWidth: 20
-coverHeight: 15
+images: 
+  - 'hohe-wand-multi-pitch.jpg'
 excerpt: Mehrseillängen auf der Hohen Wand in den Gutensteiner Alpen
-location: [47.8296609, 16.0857361]
+location: [16.0857361, 47.8296609]
 map:
   - title: Beserlpark
     slug: hohe-wand-multi-pitch#beserlpark
-    location: [47.809377586409795, 16.01725481844416]
+    location: [16.01725481844416, 47.809377586409795]
     stop:
       - name: Grünbach am Schneeberg Bahnhof
-        location: [47.79767563193555, 15.997949418142149]
+        location: [15.997949418142149, 47.79767563193555]
 ---
 
 ## Beserlpark

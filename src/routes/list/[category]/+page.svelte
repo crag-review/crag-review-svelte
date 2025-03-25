@@ -2,7 +2,8 @@
 	import PostsList from '$lib/components/PostsList.svelte';
 	import { base } from '$app/paths';
 
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 
 	const { posts, activeCategory } = data;
 </script>

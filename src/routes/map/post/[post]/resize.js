@@ -20,12 +20,10 @@ export function resize(element) {
 
 	function calculateTargetHeights() {
 		const screenHeight = window.innerHeight;
-		targetHeights = [screenHeight * 0.22, screenHeight * 0.5, screenHeight].map((height) =>
-			Math.max(height, 150)
-		);
+		targetHeights = [screenHeight * 0.18, screenHeight * 0.5, screenHeight];
 
-		minHeight = screenHeight * 0.22;
-		maxTop = screenHeight - minHeight - 20;
+		minHeight = screenHeight * 0.18;
+		maxTop = screenHeight - minHeight - 8;
 	}
 
 	function calculateClosestHeight(currentHeight, direction) {
@@ -68,7 +66,7 @@ export function resize(element) {
 			element.style.borderRadius = `0`;
 			element.style.height = `${closestHeight}px`;
 		} else {
-			element.style.marginInline = `calc(var(--spacing)* 2)`;
+			element.style.marginInline = `calc(var(--spacing)* 1)`;
 			element.style.borderRadius = `1.5rem`;
 			element.style.top = `${currentBottom - closestHeight}px`;
 			element.style.height = `${closestHeight}px`;
@@ -98,11 +96,11 @@ export function resize(element) {
 		lastTimestamp = Date.now();
 		active.classList.add('selected');
 		element.style.transition = 'margin-inline 0.2s ease-out, border-radius 0.2s ease-out';
-		element.style.marginInline = `calc(var(--spacing)* 2)`;
+		element.style.marginInline = `calc(var(--spacing)* 1)`;
 		element.style.borderRadius = `1.5rem`;
 		if (parseFloat(element.style.height) === targetHeights[targetHeights.length -1]) {
-			element.style.height = parseFloat(element.style.height) - 20 + "px";
-			initialRect = { top: rect.top, height: rect.height - 20 };
+			element.style.height = parseFloat(element.style.height) - 4 + "px";
+			initialRect = { top: rect.top, height: rect.height - 4 };
 		}
 
 		setTimeout(() => {

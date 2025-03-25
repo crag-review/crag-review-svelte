@@ -5,16 +5,15 @@ updated: "2024-06-24"
 categories:
   - "Bouldern"
   - "Klettern"
-coverImage: "baden-bouldern.jpg"
-coverWidth: 20
-coverHeight: 15
+images: 
+  - "baden-bouldern.jpg"
 excerpt: Mehrseillängen auf der Hohen Wand in den Gutensteiner Alpen
-location: [48.0182711,16.1959914]
+location: [16.1959914, 48.0182711]
 zoom: 14
 map:
   - title: Kleines Verdon
     slug: baden-bouldern#Kleines-Verdon
-    location: [48.0182711,16.1959914]
+    location: [16.1959914, 48.0182711]
 ---
 
 ## Kleines Verdon

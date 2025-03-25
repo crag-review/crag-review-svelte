@@ -5,19 +5,18 @@ updated: '2024-05-01'
 categories:
   - 'Mehrseillängen'
   - 'Klettern'
-coverImage: 'mixnitz-multi-pitch.jpg'
-coverWidth: 20
-coverHeight: 15
+images: 
+  - 'mixnitz-multi-pitch.jpg'
 excerpt: Mehrseillängen rund um Mixnitz
-location: [47.3293, 15.3637]
+location: [15.3637, 47.3293]
 zoom: 14
 map:
   - title: Roter Kamin
     slug: mixnitz-multi-pitch#roter-kamin
-    location: [47.33561636563111, 15.389441386534566]
+    location: [15.389441386534566, 47.33561636563111]
     stop:
       - name: Grünbach am Schneeberg Bahnhof
-        location: [47.331713971977095, 15.360276320342253]
+        location: [15.360276320342253, 47.331713971977095]
 
 
 ---

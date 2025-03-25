@@ -5,37 +5,44 @@ updated: '2024-04-09'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'mödling.jpg'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'mödling.jpg'
+  - 'lausbubenwand.jpg'
+  - 'roter-ofen.jpg'
+  - 'efeugrat.jpg'
+  - 'glocknergrat.jpg'
 excerpt: Klettergärten in Mödling und Umgebung
-location: [48.08088,16.27030]
+location: [16.27030, 48.08088]
 zoom: 14
 map:
   - title: Roter Ofen
     slug: mödling#roter-ofen
-    location: [48.08949963471001, 16.238660492817914]
+    location: [16.239197788586296, 48.0898335567538]
     stop: 
       - name: Hinterbrühl Brühlegg
-        location: [48.08590220179717, 16.242685270922568]
+        route: roter-ofen.geojson
+        location: [16.242523158843653, 48.08574415078681]
   - title: Efeugrat
     slug: mödling#efeugrat
-    location: [48.08088,16.27030]
+    location: [16.27030, 48.08088]
     stop:
       - name: Bahnhof Mödling
-        location: [48.08580, 16.29538]
+        route: efeugrat.geojson
+        location: [16.29574165342936, 48.08579238497782]
   - title: Lausbubenwand
     slug: mödling#lausbubenwand
-    location: [48.08049,16.27297]
+    location: [16.27297, 48.08049]
     stop:
       - name: Bahnhof Mödling
-        location: [48.08580, 16.29538]
+        route: lausbubenwand.geojson
+        location: [16.29574165342936, 48.08579238497782]
   - title: Glocknergrat
     slug: mödling#glocknergrat
-    location: [48.08245, 16.27625]
+    location: [ 16.27625, 48.08245]
     stop:
       - name: Bahnhof Mödling
-        location: [48.08580, 16.29538]
+        route: glocknergrat.geojson
+        location: [16.29574165342936, 48.08579238497782]
 ---
 
 ## Roter Ofen

@@ -12,12 +12,6 @@
 	min-height: 100vh;
 }
 
-img {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-}
-
 .post {
 	h1 {
 		margin-bottom: 1rem;
@@ -37,26 +31,6 @@ li {
 	margin-bottom: 0.25rem;
 }
 
-.post-footer__categories {
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
-}
-
-.post-footer li {
-	display: inline-block;
-	font-size: 0.8rem;
-}
-
-.post-footer a {
-	background-color: var(--lightAccent);
-	padding: 0.5rem 0.75rem;
-	text-transform: uppercase;
-	font-family: var(--primaryFont);
-	font-weight: bold;
-}
-
 @media (min-width: 48rem) {
 	.icon-link::before {
 		left: -1.5rem;
@@ -66,3 +40,5 @@ li {
 .icon-link:hover::before {
 	opacity: 1;
 }
+
+

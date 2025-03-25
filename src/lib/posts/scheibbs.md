@@ -4,16 +4,17 @@ date: '2024-06-15'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'amstetten.jpg'
+images: 
+  - 'amstetten.jpg'
 excerpt: Klettergärten in Scheibbs
-location: [48.000140, 15.186137]
+location: [15.186137, 48.000140]
 map:
   - title: Lueggraben
     slug: scheibbs#lueggraben
-    location: [47.98624,15.13871]
+    location: [15.13871, 47.98624]
   - title: Blassenstein
     slug: scheibbs#blassenstein
-    location: [48.0088208,15.1998192]
+    location: [15.1998192, 48.0088208]
 zoom: 13
 ---
 
