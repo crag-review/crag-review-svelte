@@ -5,19 +5,18 @@ updated: '2024-08-16'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'sarajevo.jpg'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'sarajevo.jpg'
 excerpt: Klettern rund um Sarajevo
-location: [43.8643265,18.5440083]
+location: [18.5440083, 43.8643265]
 zoom: 14
 map:
   - title: Orlovača
     slug: sarajevo#orlovača
-    location: [43.864327, 18.546583]
+    location: [18.546583, 43.864327]
   - title: Han derventa
     slug: sarajevo#han-derventa
-    location: [43.8643265,18.5440083]
+    location: [18.5440083, 43.8643265]
 ---
 
 ## Orlovača

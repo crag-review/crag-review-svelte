@@ -5,28 +5,27 @@ updated: '2024-04-09'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'wachau.jpg'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'wachau.jpg'
 excerpt: Klettergärten in Wachau und Umgebung
-location: [48.4112, 15.6071]
+location: [15.6071, 48.4112]
 zoom: 14
 map:
   - title: Nasenwand
     slug: wachau#nasenwand
-    location: [48.4023248,15.5181851]
+    location: [15.5181851, 48.4023248]
   - title: Kummerstal
     slug: wachau#kummerstal
-    location: [48.4053065,15.5205428]
+    location: [15.5205428, 48.4053065]
   - title: Kummerstal
     slug: wachau#ruine-dürnstein
-    location: [48.3981524,15.5238204]
+    location: [15.5238204, 48.3981524]
   - title: Civetta
     slug: wachau#civetta
-    location: [48.4025936,15.5220663]
+    location: [15.5220663, 48.4025936]
   - title: Civetta
     slug: wachau#St.-Lorenz
-    location: [48.3838225,15.4683108]
+    location: [15.4683108, 48.3838225]
 ---
 
 ## Dürnstein

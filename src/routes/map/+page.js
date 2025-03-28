@@ -1,11 +1,11 @@
-import fetchPosts from '$lib/assets/js/fetchPosts.js';
 import fetchUniqueCategories from '$lib/assets/js/fetchUniqueCategories.js';
+import fetchPosts from '$lib/assets/js/fetchPosts.js';
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async () => {
-	const options = { limit: -1 };
-	const { posts } = await fetchPosts(options);
+	const { posts } = await fetchPosts();
 	const categories = await fetchUniqueCategories();
+	const locations = posts.filter(value => !!value.location);
 
-	return { posts, categories };
+	return { categories, locations };
 };

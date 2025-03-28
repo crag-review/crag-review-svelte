@@ -1,21 +1,18 @@
 <script>
-	import ClimbingMap from '$lib/components/ClimbingMap.svelte';
 	import { siteTitle } from '$lib/config.js';
 	import { base } from '$app/paths';
 
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 
-	const { posts, categories } = data;
-	const locations = posts.filter(value => !!value.location);
+	const { categories } = data;
 </script>
 
 <svelte:head>
 	<title>{siteTitle}</title>
 </svelte:head>
 
-<ClimbingMap onMarkerClicked={() => console.log("")} {locations}></ClimbingMap>
-
-<div class="fixed h-fit no-scrollbar overflow-x-auto sm:w-auto sm:left-26 left-18 right-0 py-2 top-20 z-[1000] fade">
+<div class="fixed h-fit no-scrollbar overflow-x-auto sm:w-auto sm:left-26 left-15 right-0 py-2 top-21 z-[1000] fade">
 	<span class="px-4"></span>
 	{#each categories as category}
 		<a href="{base}/map/{category}"

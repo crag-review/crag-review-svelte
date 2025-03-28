@@ -5,25 +5,24 @@ updated: '2024-04-09'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'amstetten.jpg'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'amstetten.jpg'
 excerpt: Tiefenbach und Sarmingstein, eine Liste mit Klettergärten rund um Amstetten
 location: [48.2305654,14.9426978]
 zoom: 12
 map:
   - title: Tiefenbach
     slug: amstetten#tiefenbach
-    location: [48.216099, 14.859579]
+    location: [14.859579, 48.216099]
     stop: 
       - name: Ardagger-Markt Donaubrücke/Tiefenbach
-        location: [48.210354, 14.857920]
+        location: [14.857920, 48.210354]
   - title: Sarmingstein
     slug: amstetten#sarmingstein
-    location: [48.2321660,14.9466775]
+    location: [14.9466775, 48.2321660]
     stop: 
       - name: Sarmingstein Abzw Alter Bahnhof
-        location: [48.2305654,14.9426978]
+        location: [14.9426978, 48.2305654]
 ---
 
 ## Tiefenbach

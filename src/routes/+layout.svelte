@@ -1,30 +1,33 @@
 <script>
 	import '../app.css';
+	import { page } from '$app/stores'
 	import { siteTitle, siteLink } from '$lib/config.js';
 	import { base } from '$app/paths';
 	import '@fortawesome/fontawesome-free/css/fontawesome.css';
 	import '@fortawesome/fontawesome-free/css/brands.css';
 	import '@fortawesome/fontawesome-free/css/solid.css';
-	import { onMount } from 'svelte';
-	import { preloadCode } from '$app/navigation';
-
-	export let data;
-	/**
-	 * This pre-fetches all top-level routes on the site in the background for faster loading.
-	 * https://kit.svelte.dev/docs/modules#$app-navigation-preloaddata
-	 *
-	 * Any route added in src/lib/config.js will be preloaded automatically. You can add your
-	 * own preloadData() calls here, too.
-	 **/
-	onMount(() => {
-		const navRoutes = navItems?.map((item) => base + item.route);
-		preloadCode(...navRoutes);
-	});
+	/** @type {{children?: import('svelte').Snippet}} */
+	let { children } = $props();
 </script>
 
-<!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
-
 <svelte:head>
+	<title>{$page.data.meta?.title}</title>
+	<meta name="title" content={$page.data.meta?.title}/>
+	<meta name="description" content={$page.data.meta?.description}/>
+	<meta name="author" content="{$page.data.meta?.author}"/>
+	<meta property="og:site_name" content="Vorstieg"/>
+	<meta property="og:type" content="{$page.data.meta?.type}"/>
+	<meta property="og:url" content={$page.data.meta?.url}/>
+	<meta property="og:locale" content={$page.data.meta?.lang}/>
+	<meta property="og:title" content={$page.data.meta?.title}/>
+	<meta property="og:description" content={$page.data.meta?.description}/>
+	<meta name="twitter:title" content={$page.data.meta?.title} />
+	<meta name="twitter:description" content={$page.data.meta?.description} />
+	<meta property="og:image" content={$page.data.meta?.image}/>
+	<meta property="og:image:secure_url" content={$page.data.meta?.image}/>
+	<meta property="og:image:type" content="image/jpg"/>
+	<meta property="og:image:width" content="1707"/>
+	<meta property="og:image:height" content="1233"/>
 	<link rel="stylesheet" href="{base}/css/vars.css" />
 	<link rel="stylesheet" href="{base}/css/root.css" />
 	<link rel="stylesheet" href="{base}/css/typography.css" />
@@ -61,11 +64,8 @@
 	<div class="absolute h-fit fixed w-full sm:w-auto bottom-0 sm:bottom-auto p-2 left-5 sm:left-15 top-4 z-[1000]">
 		<span class="text-4xl md:text-5xl font-black text-stroke-8 text-stroke-white">Felsverzeichnis</span>
 	</div>
-	{#key data.path}
 		<main id="main" class="overflow-auto" tabindex="-1">
-			<slot />
+			{@render children?.()}
 		</main>
-	{/key}
 </div>
-
 <style></style>

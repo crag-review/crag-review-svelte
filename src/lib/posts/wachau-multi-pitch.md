@@ -5,30 +5,29 @@ updated: '2024-04-09'
 categories:
   - 'Mehrseillängen'
   - 'Klettern'
-coverImage: 'wachau-mulit-pitch.jpg'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'wachau-mulit-pitch.jpg'
 excerpt: Mehrseillängen in Wachau und Umgebung
-location: [48.3976, 15.5197]
+location: [15.5197, 48.3976]
 map:
   - title: Don Bosco Grat
     slug: wachau-multi-pitch#dürnstein
-    location: [48.4053065,15.5205428]
+    location: [15.5205428, 48.4053065]
   - title: Wachauer Grat
     slug: wachau-multi-pitch#dürnstein
-    location: [48.4053065,15.5205428]
+    location: [15.5205428, 48.4053065]
   - title: Bergrettungssteig
     slug: wachau-multi-pitch#dürnstein
-    location: [48.4023248,15.5181851]
+    location: [15.5181851, 48.4023248]
     stop:
     - name: Dürnstein/Wachau Nord
-      location: [48.399350, 15.518170]
+      location: [15.518170, 48.399350]
   - title: Smaragdlerweg
     slug: wachau-multi-pitch#smaragdlerweg
-    location: [48.3981524,15.5238204]
+    location: [15.5238204, 48.3981524]
     stop:
     - name: Dürnstein/Wachau Nord
-      location: [48.393221, 15.523641]
+      location: [15.523641, 48.393221]
 zoom: 14
 ---
 

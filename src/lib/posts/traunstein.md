@@ -4,13 +4,14 @@ date: '2024-06-15'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'traunstein-multi-pitch.jpg'
+images: 
+  - 'traunstein-multi-pitch.jpg'
 excerpt: Sportklettern am Traunstein
-location: [47.880658,13.819849]
+location: [13.819849, 47.880658]
 map:
   - title: Adlerhorst
     slug: traunstein#adlerhorst
-    location: [47.880658,13.819849]
+    location: [13.819849, 47.880658]
 zoom: 13
 ---
 

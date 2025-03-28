@@ -5,19 +5,18 @@ updated: '2024-10-14'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'bad-ischl.jpg'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'bad-ischl.jpg'
 excerpt: Rettenbachtal, ein wunderschöner Klettergarten in Bad Ischl
-location: [47.702854,13.655880]
+location: [13.655880, 47.702854]
 zoom: 12
 map:
   - title: Rettenbachtal
     slug: bad-ischl#rettenbachtal
-    location: [47.702854,13.655880]
+    location: [13.655880, 47.702854]
     stop: 
       - name: Rettenbach b. Bad Ischl Abzw Hinterstein
-        location: [47.706878, 13.636656]
+        location: [13.636656, 47.706878]
 ---
 
 ## Rettenbachtal

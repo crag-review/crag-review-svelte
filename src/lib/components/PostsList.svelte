@@ -1,14 +1,29 @@
 <script>
 	import { base } from '$app/paths';
 
-	export let posts = [];
+	/** @type {{posts?: any}} */
+	let { posts = [] } = $props();
+
+	const images = import.meta.glob(
+		'$lib/images/*.{jpg,jpeg,png,gif,pdf}',
+		{
+			eager: true,
+			query: {
+				enhanced: true,
+				w: '1280;640;400'
+			}
+		}
+	);
+
+	function getImage(name) {
+		return images['/src/lib/images/' + name].default;
+	}
 </script>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mb-5 pb-10">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-5 pb-10">
 	{#each posts as post}
-		<a href="{base}/post/{post.slug}">
+		<a href="{base}/map/post/{post.slug}">
 			<div class="max-w-sm cursor-pointer shadow-md rounded-xl hover:shadow-lg h-[450px]">
-				<div class="rounded-t-xl h-60 bg-cover bg-center"
-						 style="background-image: url({base}/images/small/{post.coverImage});"></div>
+				<enhanced:img class="rounded-t-xl h-60 object-cover" sizes="(min-width:1920px) 1280px, (min-width:1080px) 640px, (min-width:768px) 400px" src={getImage(post.images[0])}/>
 				<div class="p-5">
 					<div>
 						<h5 class="text-2xl font-bold tracking-tight overflow-hidden text-gray-900 mb-4 mt-2">{post.title}</h5>

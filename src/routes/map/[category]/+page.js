@@ -1,10 +1,10 @@
 import fetchPosts from '$lib/assets/js/fetchPosts.js';
 
-/** @type {import('./$types').PageServerLoad} */
-export const load = async ({ params }) => {
+export const load = async ({ params, parent }) => {
 	const activeCategory = params.category;
 	const options = { category: activeCategory, limit: -1 };
 	const { posts } = await fetchPosts(options);
+	const locations = posts.filter(value => !!value.location);
 
-	return { posts, activeCategory };
+	return { locations, activeCategory };
 };

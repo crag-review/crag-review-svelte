@@ -5,19 +5,18 @@ updated: '2024-04-09'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'wachau.jpg'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'wachau.jpg'
 excerpt: Klettergärten im Waldviertel
-location: [ 48.62740886682984, 15.60953615193662 ]
+location: [15.60953615193662, 48.62740886682984]
 zoom: 14
 map:
   - title: Rosenburg
     slug: waldviertel#Rosenburg
-    location: [ 48.62740886682984, 15.60953615193662 ]
+    location: [15.60953615193662, 48.62740886682984]
     stop:
       - name: Rosenburg/Kamp Bahnhof
-        location: [ 48.62848705517076, 15.643512927469002 ]
+        location: [15.643512927469002, 48.62848705517076]
 ---
 
 ## Rosenburg

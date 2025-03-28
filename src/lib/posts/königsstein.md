@@ -5,19 +5,18 @@ updated: '2024-10-14'
 categories:
   - 'Sportklettern'
   - 'Klettern'
-coverImage: 'königsstein.png'
-coverWidth: 16
-coverHeight: 9
+images: 
+  - 'königsstein.png'
 excerpt: Königstein, eine Liste an Klettergebieten
-location: [ 49.60501494376908, 11.63453567588121 ]
+location: [11.63453567588121, 49.60501494376908]
 zoom: 13
 map:
   - title: Steinberg
-    slug: königstein/steinberg
-    location: [49.6047817,11.6538595]
+    slug: königsstein#steinberg
+    location: [11.6538595, 49.6047817]
   - title: Steinerne-Stadt
-    slug: königstein/steinerne-stadt
-    location: [49.63497391954552, 11.602130821951587]
+    slug: königsstein#steinerne-stadt
+    location: [11.602130821951587, 49.63497391954552]
 ---
 
 ## Steinberg

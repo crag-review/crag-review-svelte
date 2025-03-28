@@ -4,13 +4,14 @@ date: '2024-06-15'
 categories:
   - 'Mehrseillängen'
   - 'Klettern'
-coverImage: 'traunstein-multi-pitch.jpg'
+images: 
+  - 'traunstein-multi-pitch.jpg'
 excerpt: Mehrseillängen am Traunstein
-location: [47.861695,13.818782]
+location: [13.818782, 47.861695]
 map:
   - title: Luftikus
     slug: traunstein-multi-pitch#luftikus
-    location: [47.861695,13.818782]
+    location: [13.818782, 47.861695]
 zoom: 13
 ---
 
