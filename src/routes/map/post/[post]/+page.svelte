@@ -18,9 +18,7 @@
 
 	/** @type {{data: any}} */
 	let { data } = $props();
-
-	const { title, images, categories } = data.meta;
-	const { PostContent } = data;
+	const { PostContent, images, categories, title } = data;
 
 	afterNavigate((_navigation) => {
 		if (location.hash) onMarkerClicked();

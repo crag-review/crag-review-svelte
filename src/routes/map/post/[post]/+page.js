@@ -11,9 +11,10 @@ export const load = async ({ params, url }) => {
 			center: post.metadata.location,
 			locations: post.metadata.map,
 			PostContent: post.default,
+			title: post.metadata.title,
+			categories:  post.metadata.categories,
+			images:  post.metadata.images,
 			meta: {
-				...post.metadata,
-				slug: params.post,
 				lang: 'de',
 				title: post.metadata.title + ' - Felsverzeichnis',
 				description: post.metadata.excerpt,
