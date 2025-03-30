@@ -26,7 +26,7 @@ map:
     slug: wachau-multi-pitch#smaragdlerweg
     location: [15.5238204, 48.3981524]
     stop:
-    - name: Dürnstein/Wachau Nord
+    - name: Dürnstein/Wachau Parkplatz P2
       location: [15.523641, 48.393221]
 zoom: 14
 ---
