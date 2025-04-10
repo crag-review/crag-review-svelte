@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Oberarnsdorf Fähre",
+    "type": "bus"
+  },
+  "geometry": {
+    "coordinates": [
+      15.423496,
+      48.359942
+    ],
+    "type": "Point"
+  }
+}
+
