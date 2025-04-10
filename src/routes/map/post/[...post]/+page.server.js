@@ -1,7 +1,5 @@
 import { error } from '@sveltejs/kit';
 
-export const prerender = false;
-
 export const load = async ({ params, url }) => {
 	try {
 		let transit, transitTrack, parking;
