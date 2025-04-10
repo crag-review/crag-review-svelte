@@ -7,16 +7,39 @@
 	import { afterNavigate, goto } from '$app/navigation';
 
 	afterNavigate((_navigation) => {
-		fillLayers(locations)
-		if(!location.hash) map.flyTo({ center, zoom, pitch })
+		fillLayers(locations);
+		if (zoomToLocations) {
+			const coordinates = places.features.map(it => it.geometry.coordinates);
+			const bounds = coordinates.reduce((bounds, coord) => {
+				return bounds.extend(coord);
+			}, new maplibregl.LngLatBounds(coordinates[0], coordinates[0]));
+			const mediaQuery = '(min-width: 40rem)';
+			const queries = window.matchMedia(mediaQuery);
+			if (detailsShown) {
+				if (queries.matches) {
+					map.fitBounds(bounds, { pitch, padding: { left: 200, top: 200, bottom: 200, right: 1000 } });
+				} else {
+					map.fitBounds(bounds, { pitch, padding: { left: 50, top: 100, bottom: 600, right: 50 } });
+				}
+			} else {
+				if (queries.matches) {
+					map.fitBounds(bounds, { pitch, padding: 200 });
+				} else {
+					map.fitBounds(bounds, { pitch, padding: 100 });
+				}
+			}
+		}
 	});
 
-	/** @type {{locations?: any, zoom?: number, center?: any, pitch?: number}} */
+	/** @type {{locations?: any, tracks?: any, zoom?: number, center?: any, pitch?: number}} */
 	let {
 		locations = [],
+		tracks = [],
 		zoom = 8,
 		center = [16.0, 48],
-		pitch = 60
+		pitch = 50,
+		detailsShown = false,
+		zoomToLocations = false
 	} = $props();
 
 	let mapElement = $state();
@@ -46,10 +69,11 @@
 			})
 		);
 
-		map.getCanvas().style.cursor = "default"
+		map.getCanvas().style.cursor = 'default';
 
 		map.on('click', 'places', (e) => {
-			goto(e.features[0].properties.link);
+			if (e.features[0]?.properties?.path)
+				goto(`${base}/map/post/${e.features[0].properties.path}`);
 		});
 
 		map.on('load', async () => {
@@ -57,14 +81,34 @@
 			map.on('styledata', async () => drawLayers());
 		});
 
-		map.on('mouseenter', 'places', function () {
-				map.getCanvas().style.cursor = 'pointer';
+		map.on('mouseenter', 'places', function() {
+			map.getCanvas().style.cursor = 'pointer';
 		});
 
-		map.on('mouseleave', 'places', function () {
+		map.on('mouseleave', 'places', function() {
 			map.getCanvas().style.cursor = 'default';
 		});
 
+		map.on('mouseenter', 'places-cluster', function() {
+			map.getCanvas().style.cursor = 'pointer';
+		});
+
+		map.on('mouseleave', 'places-cluster', function() {
+			map.getCanvas().style.cursor = 'default';
+		});
+
+		map.on('click', 'places-cluster', async (e) => {
+			const features = map.queryRenderedFeatures(e.point, {
+				layers: ['places-cluster']
+			});
+			const clusterId = features[0].properties.cluster_id;
+			const zoom = await map.getSource('places').getClusterExpansionZoom(clusterId);
+
+			map.easeTo({
+				center: features[0].geometry.coordinates,
+				zoom
+			});
+		});
 	});
 
 	function fillLayers(locations) {
@@ -76,39 +120,25 @@
 			'type': 'FeatureCollection',
 			'features': []
 		};
+		tracks.forEach((track) => {
+			routes.features.push(track);
+		});
 		locations.forEach((location) => {
-			if (location.stop) {
-				location.stop.forEach(async (stop) => {
-					addMarker(stop.location, 'stop', stop.name, `${base}/map/post/${location.slug}`);
-					if (stop.route) await addRoute(stop.route);
-				});
-			}
-			addMarker(location.location, 'climber', location.title, `${base}/map/post/${location.slug}`);
+			places.features.push(location);
 		});
 		if (map?.loaded) drawLayers();
 	}
 
 	async function drawLayers() {
-		map.addImage('climber', (await map.loadImage(base + '/icons/climber.png')).data);
-		map.addImage('stop', (await map.loadImage(base + '/icons/stop.png')).data);
+		map.addImage('sports-climbing', (await map.loadImage(base + '/icons/sports-climbing.png')).data);
+		map.addImage('multi-pitch', (await map.loadImage(base + '/icons/multi-pitch.png')).data);
+		map.addImage('bouldering', (await map.loadImage(base + '/icons/bouldering.png')).data);
+		map.addImage('train', (await map.loadImage(base + '/icons/train.png')).data);
+		map.addImage('bus', (await map.loadImage(base + '/icons/bus.png')).data);
+		map.addImage('cluster', (await map.loadImage(base + '/icons/cluster.png')).data);
+		map.addImage('parking-space', (await map.loadImage(base + '/icons/parking.png')).data);
 		map.getSource('places').setData(places);
 		map.getSource('routes').setData(routes);
-	}
-
-	async function addRoute(file) {
-		const route = await (await fetch(`${base}/geojson/${file}`)).json(); // stored in static folder
-		routes.features = routes.features.concat(route.features);
-	}
-
-	function addMarker(location, icon, name, link) {
-		places.features.push({
-			'type': 'Feature',
-			'geometry': {
-				'type': 'Point',
-				'coordinates': location
-			},
-			'properties': { name, icon, link }
-		});
 	}
 
 	function setTransportTileLayer() {

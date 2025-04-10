@@ -11,19 +11,8 @@ export const siteLink = 'https://felsverzeichnis.vorstieg.eu/';
 
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 50;
-
-// Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
-export const navItems = [
-	{
-		title: 'Hauptseite',
-		route: '/map'
-	},
-	{
-		title: 'Klettergebiete',
-		route: '/list'
-	},
-	{
-		title: 'Impressum',
-		route: '/about'
-	}
-];
+export const types = new Map([
+	["sports-climbing", "Sportklettern"],
+	["bouldering", "Bouldern"],
+	["multi-pitch", "Mehrseillängen"],
+]);
