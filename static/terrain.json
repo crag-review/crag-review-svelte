@@ -6071,34 +6071,16 @@
       "id": "places",
       "type": "symbol",
       "source": "places",
+      "filter": ["!", ["has", "point_count"]],
       "layout": {
-        "icon-image": [
-          "get",
-          "icon"
-        ],
+        "icon-image": ["get", "type"],
         "icon-size": 0.8,
         "icon-allow-overlap": true,
         "text-optional": true,
-        "text-field": [
-          "step",
-          [
-            "zoom"
-          ],
-          "",
-          8,
-          [
-            "get",
-            "name"
-          ]
-        ],
-        "text-offset": [
-          0,
-          1.8
-        ],
+        "text-field": ["get", "name"],
+        "text-offset": [0, 1.8],
         "text-anchor": "top",
-        "text-font": [
-          "Noto Sans Bold"
-        ],
+        "text-font": ["Noto Sans Bold"],
         "text-size": 14,
         "visibility": "visible",
         "text-max-width": 8
@@ -6108,6 +6090,27 @@
         "text-halo-blur": 0,
         "text-halo-color": "rgba(255,255,255,1)",
         "text-halo-width": 3
+      }
+    },
+    {
+      "id": "places-cluster",
+      "type": "symbol",
+      "source": "places",
+      "filter": ["has", "point_count"],
+      "layout": {
+        "icon-image": "cluster",
+        "icon-size": 0.8,
+        "icon-allow-overlap": true,
+        "text-field": "{point_count_abbreviated}",
+        "text-offset": [1.1, 0.3],
+        "text-anchor": "top",
+        "text-font": ["Noto Sans Bold"],
+        "text-size": 14,
+        "visibility": "visible",
+        "text-max-width": 8
+      },
+      "paint": {
+        "text-color": "rgba(47,57,72,1)"
       }
     }
   ],
